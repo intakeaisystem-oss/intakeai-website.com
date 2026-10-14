@@ -1,3 +1,12 @@
+# Marketing & Research Intelligence for Claude
+
+This repository has two systems:
+
+1. **Marketing, Sales, Advertising & Conversion Toolkit** (`marketing_toolkit/`). This is working Python code: customer psychology, voice-of-customer analysis, offer scoring, copy evaluation, ad concepts, funnel and landing-page audits, metrics, A/B statistics, sales and objection handling, reusable components, persistent memory, and import-ready packages for normal Claude. See **`MARKETING_TOOLKIT.md`**. The ready-to-upload packages are in **`claude_packages/`**.
+2. **Business Research Intelligence System** (10 Claude agents), described below.
+
+---
+
 # Business Research Intelligence System (10 agents)
 
 This is a modular, persistent research system made of **10 specialist Claude agents**. It finds, evidences, challenges and ranks business opportunities of any kind: online or offline, B2B services, software, e-commerce, productized services and recurring-revenue models. All research is stored in an **Obsidian-compatible vault**.

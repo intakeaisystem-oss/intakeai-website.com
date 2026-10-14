@@ -1,0 +1,67 @@
+{
+  "type": "object",
+  "required": [
+    "statement",
+    "basis",
+    "confidence"
+  ],
+  "properties": {
+    "statement": {
+      "type": "string",
+      "minLength": 3
+    },
+    "basis": {
+      "type": "string",
+      "enum": [
+        "observed",
+        "measured",
+        "inferred",
+        "hypothesis"
+      ]
+    },
+    "confidence": {
+      "type": "string",
+      "enum": [
+        "low",
+        "medium",
+        "high"
+      ]
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "basis"
+        ],
+        "properties": {
+          "basis": {
+            "type": "string",
+            "enum": [
+              "observed",
+              "measured",
+              "inferred",
+              "hypothesis"
+            ]
+          },
+          "quote": {
+            "type": "string"
+          },
+          "source_ref": {
+            "type": "string"
+          },
+          "note": {
+            "type": "string"
+          },
+          "count": {
+            "type": "integer",
+            "minimum": 0
+          }
+        }
+      }
+    },
+    "validate_by": {
+      "type": "string"
+    }
+  }
+}

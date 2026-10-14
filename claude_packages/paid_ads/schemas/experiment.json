@@ -1,0 +1,106 @@
+{
+  "type": "object",
+  "required": [
+    "hypothesis",
+    "funnel_stage",
+    "control",
+    "variant",
+    "primary_metric"
+  ],
+  "properties": {
+    "experiment_id": {
+      "type": "string"
+    },
+    "hypothesis": {
+      "type": "string",
+      "minLength": 10
+    },
+    "target_audience": {
+      "type": "string"
+    },
+    "funnel_stage": {
+      "type": "string",
+      "enum": [
+        "discovery",
+        "landing",
+        "signup",
+        "activation",
+        "purchase",
+        "retention",
+        "referral"
+      ]
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "headline",
+        "offer",
+        "pricing_presentation",
+        "ad_hook",
+        "creative_concept",
+        "cta",
+        "landing_structure",
+        "signup_flow",
+        "onboarding",
+        "email_sequence",
+        "audience_segment",
+        "other"
+      ]
+    },
+    "control": {
+      "type": "string"
+    },
+    "variant": {
+      "type": "string"
+    },
+    "variants": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "primary_metric": {
+      "type": "string"
+    },
+    "guardrail_metrics": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "required_data": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "start_date": {
+      "type": "string"
+    },
+    "end_date": {
+      "type": "string"
+    },
+    "baseline_rate": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "minimum_detectable_effect": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "draft",
+        "running",
+        "completed",
+        "stopped",
+        "inconclusive"
+      ]
+    }
+  }
+}

@@ -1,0 +1,213 @@
+{
+  "_note": "Output of the real code on ILLUSTRATIVE fictional inputs.",
+  "input": {
+    "html": "examples/marketing/sample_landing.html",
+    "context": {
+      "offer": {
+        "name": "ExampleDispatch Pro",
+        "target_customer": "owner-operators of HVAC and plumbing companies with 3-15 technicians",
+        "problem": "Scheduling technicians by phone and spreadsheet takes hours every week and causes double-bookings",
+        "desired_outcome": "Schedule a full week of jobs in under 30 minutes with no double-bookings",
+        "value_proposition": "See and schedule every technician's week on one screen, with automatic text reminders",
+        "differentiation": "Unlike spreadsheets, technicians see jobs on their phones and customers get reminders automatically",
+        "price": 79,
+        "currency": "$",
+        "billing": "monthly",
+        "packaging": "One plan, up to 15 technicians",
+        "deliverables": [
+          "drag-and-drop schedule",
+          "technician mobile app",
+          "SMS reminders",
+          "customer list import"
+        ],
+        "time_to_value_days": 1,
+        "risk_reversal": "",
+        "proof": [],
+        "implementation_effort": "low",
+        "alternatives": [
+          "spreadsheets",
+          "BigFSM"
+        ],
+        "fulfillment_cost": 12,
+        "acquisition_cost_estimate": 250,
+        "expected_purchases_per_customer": 18
+      }
+    }
+  },
+  "output": {
+    "summary": {
+      "title": "ExampleDispatch",
+      "h1": [
+        "The innovative all-in-one field service platform"
+      ],
+      "h2_count": 1,
+      "ctas": [
+        "Submit"
+      ],
+      "forms": [
+        {
+          "line": 10,
+          "fields": 7
+        }
+      ],
+      "images": 1,
+      "word_count": 26,
+      "proof_signals": 0,
+      "has_viewport": false
+    },
+    "recommendations": [
+      {
+        "area": "message_match",
+        "severity": "high",
+        "finding": "Hero doesn't echo the ad (overlap 5%)",
+        "recommendation": "Repeat the ad's promise/offer in the H1 or subheadline.",
+        "hypothesis": "Visitors who don't see what they clicked for bounce.",
+        "how_to_test": "A/B test or usability test",
+        "evidence": [
+          "The innovative all-in-one field service platform"
+        ],
+        "line": 6
+      },
+      {
+        "area": "cta",
+        "severity": "high",
+        "finding": "No CTA in the hero section",
+        "recommendation": "Place the primary CTA in the hero (above the first section break).",
+        "hypothesis": "Visitors ready to act shouldn't need to scroll.",
+        "how_to_test": "A/B test or usability test",
+        "evidence": [
+          "Submit"
+        ],
+        "line": 13
+      },
+      {
+        "area": "proof_trust",
+        "severity": "high",
+        "finding": "No social proof or evidence on the page",
+        "recommendation": "Add verified proof: real reviews with source, customer logos (with permission), data, demo video.",
+        "hypothesis": "Proof reduces perceived risk, especially for new brands.",
+        "how_to_test": "A/B test or usability test",
+        "evidence": [],
+        "line": null
+      },
+      {
+        "area": "mobile",
+        "severity": "high",
+        "finding": "No viewport meta tag",
+        "recommendation": "Add <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">.",
+        "hypothesis": "Without it, mobile browsers render a zoomed-out desktop page.",
+        "how_to_test": "Check on real devices",
+        "evidence": [],
+        "line": null
+      },
+      {
+        "area": "headline",
+        "severity": "medium",
+        "finding": "Headline is generic/product-centric",
+        "recommendation": "State the specific outcome for the reader (in their words).",
+        "hypothesis": "Outcome-focused headlines increase relevance.",
+        "how_to_test": "A/B test or usability test",
+        "evidence": [
+          "The innovative all-in-one field service platform"
+        ],
+        "line": 6
+      },
+      {
+        "area": "cta",
+        "severity": "medium",
+        "finding": "Generic CTA text: ['Submit']",
+        "recommendation": "Use action + value text, e.g. 'Get my free quote', 'Start 14-day trial'.",
+        "hypothesis": "Specific CTA text clarifies what happens next.",
+        "how_to_test": "A/B test or usability test",
+        "evidence": [
+          "Submit"
+        ],
+        "line": 13
+      },
+      {
+        "area": "offer_clarity",
+        "severity": "medium",
+        "finding": "Offer price not shown on page",
+        "recommendation": "State price (or 'from') and what's included, or explain why pricing is on request.",
+        "hypothesis": "Hidden pricing raises uncertainty for price-sensitive buyers.",
+        "how_to_test": "A/B test or usability test",
+        "evidence": [],
+        "line": null
+      },
+      {
+        "area": "offer_clarity",
+        "severity": "medium",
+        "finding": "Deliverables not mentioned: ['drag-and-drop schedule', 'technician mobile app', 'SMS reminders', 'customer list import']",
+        "recommendation": "List what the buyer gets.",
+        "hypothesis": "Concrete inclusions increase perceived value.",
+        "how_to_test": "A/B test or usability test",
+        "evidence": [],
+        "line": null
+      },
+      {
+        "area": "forms",
+        "severity": "medium",
+        "finding": "Form has 7 fields",
+        "recommendation": "Ask only what's needed now; move the rest to after signup (progressive profiling).",
+        "hypothesis": "Each extra field adds effort and drop-off risk.",
+        "how_to_test": "A/B test or usability test",
+        "evidence": [
+          "first_name",
+          "last_name",
+          "email",
+          "phone",
+          "company",
+          "technicians",
+          "password"
+        ],
+        "line": 10
+      },
+      {
+        "area": "seo_snippet",
+        "severity": "low",
+        "finding": "Missing meta description",
+        "recommendation": "Add a meta description that mirrors the headline promise.",
+        "hypothesis": "Improves search snippet relevance and CTR.",
+        "how_to_test": "Search Console CTR before/after",
+        "evidence": [],
+        "line": null
+      },
+      {
+        "area": "proof_trust",
+        "severity": "low",
+        "finding": "No privacy/spam reassurance near forms",
+        "recommendation": "Add a short privacy note under the form.",
+        "hypothesis": "Reassurance reduces form anxiety.",
+        "how_to_test": "A/B test or usability test",
+        "evidence": [],
+        "line": 10
+      },
+      {
+        "area": "offer_clarity",
+        "severity": "low",
+        "finding": "Hero copy doesn't address the reader",
+        "recommendation": "Rewrite hero around the reader's outcome ('you').",
+        "hypothesis": "Reader-centred copy increases relevance.",
+        "how_to_test": "A/B test or usability test",
+        "evidence": [],
+        "line": null
+      },
+      {
+        "area": "accessibility",
+        "severity": "low",
+        "finding": "1 image(s) without alt text",
+        "recommendation": "Add descriptive alt text.",
+        "hypothesis": "Accessibility and image-search benefits.",
+        "how_to_test": "A/B test or usability test",
+        "evidence": [
+          "screenshot.png"
+        ],
+        "line": 15
+      }
+    ],
+    "limitations": [
+      "Static analysis only: no rendering, speed or real-user data."
+    ],
+    "note": "Each recommendation is a hypothesis; validate with tests or user research."
+  }
+}

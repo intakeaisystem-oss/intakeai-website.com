@@ -1,0 +1,70 @@
+{
+  "_note": "Output of the real code on ILLUSTRATIVE fictional inputs.",
+  "input": {
+    "text": "Only 3 spots left! The #1 scheduling app - guaranteed results overnight.",
+    "context": {
+      "kind": "ad"
+    }
+  },
+  "output": {
+    "decision": "reject",
+    "passed": false,
+    "findings": [
+      {
+        "code": "generic_messaging",
+        "severity": "warn",
+        "message": "Generic or vague messaging",
+        "why_it_matters": "Generic lines are interchangeable with competitors and give the buyer no reason to believe or act.",
+        "fix": "Replace with a concrete outcome, a specific customer, a number you can prove, or the customer's own words.",
+        "evidence": [
+          "#1"
+        ]
+      },
+      {
+        "code": "unsupported_claim",
+        "severity": "reject",
+        "message": "1 claim(s) without substantiation",
+        "why_it_matters": "Unsubstantiated performance or superiority claims mislead buyers, break advertising law (e.g. FTC/ASA rules) and get ads rejected.",
+        "fix": "Add the evidence to context.substantiated_claims (and keep the source), soften to a verifiable statement, or remove.",
+        "evidence": [
+          "The #1 scheduling app - guaranteed results overnight."
+        ]
+      },
+      {
+        "code": "misleading_scarcity",
+        "severity": "reject",
+        "message": "Scarcity/urgency language without confirmed real constraint",
+        "why_it_matters": "Fake urgency erodes trust and can breach consumer-protection rules.",
+        "fix": "Only use a real deadline or capacity limit (set context.urgency_is_real=True once confirmed) or replace with a genuine reason to act now.",
+        "evidence": [
+          "only 3 spots",
+          "spots left"
+        ]
+      },
+      {
+        "code": "unrealistic_promise",
+        "severity": "reject",
+        "message": "Unrealistic or absolute promise",
+        "why_it_matters": "Absolute promises set expectations you cannot guarantee, cause refunds and trigger ad disapproval.",
+        "fix": "State the typical, evidenced outcome and conditions instead.",
+        "evidence": [
+          "overnight",
+          "guaranteed results"
+        ]
+      },
+      {
+        "code": "unclear_cta",
+        "severity": "warn",
+        "message": "No clear call to action",
+        "why_it_matters": "Without a specific next step, interested readers do nothing.",
+        "fix": "End with one action verb + what happens next (e.g. 'Book a 15-minute demo').",
+        "evidence": []
+      }
+    ],
+    "counts": {
+      "reject": 3,
+      "warn": 2
+    },
+    "note": "Internal quality gate. Passing it does not prove real-world performance or policy compliance."
+  }
+}

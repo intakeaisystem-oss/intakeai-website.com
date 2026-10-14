@@ -1,0 +1,30 @@
+{
+  "type": "object",
+  "required": [
+    "basis"
+  ],
+  "properties": {
+    "basis": {
+      "type": "string",
+      "enum": [
+        "observed",
+        "measured",
+        "inferred",
+        "hypothesis"
+      ]
+    },
+    "quote": {
+      "type": "string"
+    },
+    "source_ref": {
+      "type": "string"
+    },
+    "note": {
+      "type": "string"
+    },
+    "count": {
+      "type": "integer",
+      "minimum": 0
+    }
+  }
+}

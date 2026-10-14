@@ -1,0 +1,135 @@
+{
+  "toolkit_version": "0.1.0",
+  "capabilities": [
+    {
+      "capability": "voc.analyze",
+      "area": "customer_research",
+      "description": "Categorise customer language into themes with verbatim quotes and confidence",
+      "type": "python_code",
+      "runs_in": "any Python 3.9+ sandbox (stdlib only)",
+      "requires": []
+    },
+    {
+      "capability": "psychology.build_profile",
+      "area": "customer_research",
+      "description": "Evidence-tagged customer profile across 21 psychological dimensions",
+      "type": "python_code",
+      "runs_in": "any Python 3.9+ sandbox (stdlib only)",
+      "requires": []
+    },
+    {
+      "capability": "offer.score_offer",
+      "area": "offers",
+      "description": "Score an offer on 15 criteria incl. seller economics; explains fixes",
+      "type": "python_code",
+      "runs_in": "any Python 3.9+ sandbox (stdlib only)",
+      "requires": []
+    },
+    {
+      "capability": "offer.generate_structures",
+      "area": "offers",
+      "description": "Alternative offer structures and awareness-level angles (placeholders, no invention)",
+      "type": "python_code",
+      "runs_in": "any Python 3.9+ sandbox (stdlib only)",
+      "requires": []
+    },
+    {
+      "capability": "copywriting.build_draft",
+      "area": "copy",
+      "description": "Framework skeleton (PAS, AIDA, BAB ...) from real inputs",
+      "type": "python_code",
+      "runs_in": "any Python 3.9+ sandbox (stdlib only)",
+      "requires": []
+    },
+    {
+      "capability": "copywriting.evaluate_copy",
+      "area": "copy",
+      "description": "Score copy on 12 criteria + channel limits + QC gate",
+      "type": "python_code",
+      "runs_in": "any Python 3.9+ sandbox (stdlib only)",
+      "requires": []
+    },
+    {
+      "capability": "qc.evaluate",
+      "area": "quality",
+      "description": "Reject/revise/approve gate: unsupported claims, fake scarcity, policy risks ...",
+      "type": "python_code",
+      "runs_in": "any Python 3.9+ sandbox (stdlib only)",
+      "requires": []
+    },
+    {
+      "capability": "ads.generate_concepts",
+      "area": "ads",
+      "description": "10 distinct creative angles with hypothesis and measurement plan",
+      "type": "python_code",
+      "runs_in": "any Python 3.9+ sandbox (stdlib only)",
+      "requires": []
+    },
+    {
+      "capability": "ads.campaign_plan",
+      "area": "ads",
+      "description": "Campaign plan with budget arithmetic on stated assumptions",
+      "type": "python_code",
+      "runs_in": "any Python 3.9+ sandbox (stdlib only)",
+      "requires": []
+    },
+    {
+      "capability": "ads.VariantRegistry",
+      "area": "ads",
+      "description": "Track concepts/variants/results in the store and compare statistically",
+      "type": "python_code",
+      "runs_in": "any Python 3.9+ sandbox (stdlib only)",
+      "requires": []
+    },
+    {
+      "capability": "metrics.*",
+      "area": "analytics",
+      "description": "CTR, CPC, CPL, CAC, CPA, ROAS, breakeven ROAS, POAS, AOV, margins, LTV, payback, churn, funnel, scenarios",
+      "type": "python_code",
+      "runs_in": "any Python 3.9+ sandbox (stdlib only)",
+      "requires": []
+    },
+    {
+      "capability": "experiments.analyze",
+      "area": "experiments",
+      "description": "Two-proportion tests, Wilson CIs, Holm correction, sample-size guardrails",
+      "type": "python_code",
+      "runs_in": "any Python 3.9+ sandbox (stdlib only)",
+      "requires": []
+    },
+    {
+      "capability": "experiments.sample_size_per_arm",
+      "area": "experiments",
+      "description": "Required visitors per arm",
+      "type": "python_code",
+      "runs_in": "any Python 3.9+ sandbox (stdlib only)",
+      "requires": []
+    },
+    {
+      "capability": "experiments.ExperimentManager",
+      "area": "experiments",
+      "description": "Create/update/conclude experiments in the store; failed-test log",
+      "type": "python_code",
+      "runs_in": "any Python 3.9+ sandbox (stdlib only)",
+      "requires": []
+    },
+    {
+      "capability": "store.KnowledgeStore",
+      "area": "memory",
+      "description": "SQLite memory with history and duplicate/conflict protection",
+      "type": "python_code",
+      "runs_in": "any Python 3.9+ sandbox (stdlib only)",
+      "requires": []
+    },
+    {
+      "capability": "persistent memory",
+      "type": "requires_runtime",
+      "description": "The KnowledgeStore persists only where a SQLite file can be written. In a chat sandbox it is temporary; the user's permanent store is on their machine: send results back via RETURN_RESULTS.md."
+    },
+    {
+      "capability": "ad platform / analytics / CRM access",
+      "type": "not_included",
+      "description": "No live integrations. Metrics must be supplied as exported data."
+    }
+  ]
+}

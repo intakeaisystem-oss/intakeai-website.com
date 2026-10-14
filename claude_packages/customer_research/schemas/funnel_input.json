@@ -1,0 +1,186 @@
+{
+  "type": "object",
+  "required": [
+    "stages"
+  ],
+  "properties": {
+    "stages": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+        "type": "object",
+        "required": [
+          "name",
+          "count"
+        ],
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "count": {
+            "type": "number",
+            "minimum": 0
+          },
+          "message": {
+            "type": "string"
+          },
+          "cta": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "traffic_source": {
+      "type": "string"
+    },
+    "offer": {
+      "type": "object",
+      "required": [
+        "name"
+      ],
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "target_customer": {
+          "type": "string"
+        },
+        "problem": {
+          "type": "string"
+        },
+        "desired_outcome": {
+          "type": "string"
+        },
+        "value_proposition": {
+          "type": "string"
+        },
+        "differentiation": {
+          "type": "string"
+        },
+        "price": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "currency": {
+          "type": "string"
+        },
+        "billing": {
+          "type": "string",
+          "enum": [
+            "one_time",
+            "monthly",
+            "annual",
+            "usage",
+            "retainer",
+            "per_seat",
+            "free",
+            "other"
+          ]
+        },
+        "packaging": {
+          "type": "string"
+        },
+        "deliverables": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "time_to_value_days": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "risk_reversal": {
+          "type": "string"
+        },
+        "guarantee_terms_verified": {
+          "type": "boolean"
+        },
+        "proof": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "type",
+              "verified"
+            ],
+            "properties": {
+              "type": {
+                "type": "string",
+                "enum": [
+                  "testimonial",
+                  "case_study",
+                  "metric",
+                  "review_rating",
+                  "logo",
+                  "certification",
+                  "demo",
+                  "data",
+                  "media"
+                ]
+              },
+              "detail": {
+                "type": "string"
+              },
+              "verified": {
+                "type": "boolean"
+              },
+              "source_ref": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "bonuses": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "implementation_effort": {
+          "type": "string",
+          "enum": [
+            "none",
+            "low",
+            "medium",
+            "high"
+          ]
+        },
+        "urgency_reason": {
+          "type": "string"
+        },
+        "urgency_is_real": {
+          "type": "boolean"
+        },
+        "alternatives": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "fulfillment_cost": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "acquisition_cost_estimate": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "expected_purchases_per_customer": {
+          "type": [
+            "number",
+            "null"
+          ]
+        }
+      }
+    }
+  }
+}

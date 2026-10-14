@@ -1,0 +1,50 @@
+{
+  "type": "object",
+  "required": [
+    "text"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "text": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_type": {
+      "type": "string",
+      "enum": [
+        "review",
+        "testimonial",
+        "interview",
+        "survey",
+        "support_ticket",
+        "sales_call",
+        "feedback",
+        "forum",
+        "competitor_review",
+        "product_feedback",
+        "churn_reason",
+        "other"
+      ]
+    },
+    "source_ref": {
+      "type": "string"
+    },
+    "rating": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "date": {
+      "type": "string"
+    },
+    "about": {
+      "type": "string"
+    },
+    "quote_permitted": {
+      "type": "boolean"
+    }
+  }
+}

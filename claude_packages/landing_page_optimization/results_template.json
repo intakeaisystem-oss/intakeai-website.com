@@ -1,0 +1,13 @@
+{
+  "format": "marketing_toolkit.results.v1",
+  "generated_by": "claude (chat)",
+  "records": [
+    {
+      "kind": "customer_insight",
+      "title": "EXAMPLE: replace",
+      "basis": "hypothesis",
+      "confidence": "low",
+      "data": {}
+    }
+  ]
+}

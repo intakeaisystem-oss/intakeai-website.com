@@ -1,0 +1,17 @@
+{
+  "format": "marketing_toolkit.knowledge.v1",
+  "generated_at": "2026-10-14T01:00:28Z",
+  "filters": {
+    "kinds": [
+      "experiment",
+      "campaign_result",
+      "funnel_audit",
+      "approach"
+    ],
+    "product": null,
+    "audience": null
+  },
+  "records": [],
+  "trimmed": 0,
+  "total_matching": 0
+}

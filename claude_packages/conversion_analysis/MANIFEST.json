@@ -1,0 +1,199 @@
+{
+  "task": "conversion_analysis",
+  "toolkit_version": "0.1.0",
+  "generated_at": "2026-10-14T01:00:28Z",
+  "modules": [
+    "__init__",
+    "config",
+    "experiments",
+    "funnel",
+    "metrics",
+    "offer",
+    "qc",
+    "schemas",
+    "store",
+    "text"
+  ],
+  "files": [
+    {
+      "path": "CAPABILITIES.json",
+      "bytes": 3655,
+      "sha1": "2a6cffd7028586d84e6668d338d8cecb0198abe2"
+    },
+    {
+      "path": "CONFIG.md",
+      "bytes": 1357,
+      "sha1": "086a5a73357aa1a50e250da4b3ec81614efd1c8a"
+    },
+    {
+      "path": "MASTER_INSTRUCTIONS.md",
+      "bytes": 2527,
+      "sha1": "1f47082f3914787bc93219f9972a959803ef9474"
+    },
+    {
+      "path": "METHODOLOGY.md",
+      "bytes": 1253,
+      "sha1": "0fff45544adf38175c490969d77e890816b4e785"
+    },
+    {
+      "path": "RETURN_RESULTS.md",
+      "bytes": 1049,
+      "sha1": "f2bc88609abacbe3bcc8e735433f676a4b3a7365"
+    },
+    {
+      "path": "USAGE.md",
+      "bytes": 1402,
+      "sha1": "f8c8913e5a51ad17f771d8141ae859c7fedcd637"
+    },
+    {
+      "path": "code/marketing_toolkit/__init__.py",
+      "bytes": 1289,
+      "sha1": "0e6b877691ee8306887e6f80e3f06528a81d3cc0"
+    },
+    {
+      "path": "code/marketing_toolkit/config.py",
+      "bytes": 2633,
+      "sha1": "c5e0407df76d2dcc0b51ac0362940b3696640dc8"
+    },
+    {
+      "path": "code/marketing_toolkit/experiments.py",
+      "bytes": 13701,
+      "sha1": "97ce912d584dfe7a5ba6404fec931f334041bcdc"
+    },
+    {
+      "path": "code/marketing_toolkit/funnel.py",
+      "bytes": 27373,
+      "sha1": "b36703004fedb92ad9331ddd7ad4cb2bd5c17253"
+    },
+    {
+      "path": "code/marketing_toolkit/metrics.py",
+      "bytes": 16095,
+      "sha1": "022c6bedbde6111bbe14cfbb9f553e8d34066a26"
+    },
+    {
+      "path": "code/marketing_toolkit/offer.py",
+      "bytes": 15414,
+      "sha1": "6e8785fcb0b33b1d206166876a0bfc8508f09728"
+    },
+    {
+      "path": "code/marketing_toolkit/qc.py",
+      "bytes": 14511,
+      "sha1": "cdc64a27a65326a294ceb544cad2b7ae8912ec88"
+    },
+    {
+      "path": "code/marketing_toolkit/schemas.py",
+      "bytes": 10284,
+      "sha1": "1d1a36f230fda83fcdb5708390e6dee7df9c228f"
+    },
+    {
+      "path": "code/marketing_toolkit/store.py",
+      "bytes": 12229,
+      "sha1": "dd038d398d84dbe78b5f027e173e3d2ef3834cd0"
+    },
+    {
+      "path": "code/marketing_toolkit/text.py",
+      "bytes": 5872,
+      "sha1": "6dd8124389f9149227ce35815bb555d064cb99ee"
+    },
+    {
+      "path": "examples/experiment.json",
+      "bytes": 1523,
+      "sha1": "05a94315ee5073e3ddbaadc1c8c5ff882798309a"
+    },
+    {
+      "path": "examples/funnel.json",
+      "bytes": 3689,
+      "sha1": "5a6753bc854747f54ac234e198a66b6abf906584"
+    },
+    {
+      "path": "examples/marketing/sample_inputs.json",
+      "bytes": 4253,
+      "sha1": "4fae13a6d2a3b6f8e1f53008146b1048a9738239"
+    },
+    {
+      "path": "examples/marketing/sample_landing.html",
+      "bytes": 776,
+      "sha1": "a6dfbaf4fc841b1012c8d29beb300ee006483e10"
+    },
+    {
+      "path": "examples/metrics.json",
+      "bytes": 3270,
+      "sha1": "6f76d107381a6110e554f099aab5b212f7d75908"
+    },
+    {
+      "path": "examples/scenarios.json",
+      "bytes": 1793,
+      "sha1": "c2ec7e0b0e513d25bd01f3d19f70248df6357073"
+    },
+    {
+      "path": "knowledge/knowledge_export.json",
+      "bytes": 314,
+      "sha1": "56c6d5255be59444921823c2e0b3ac989e158d32"
+    },
+    {
+      "path": "knowledge/knowledge_summary.md",
+      "bytes": 287,
+      "sha1": "af46124c541c603413db6e95c9262c745e730cbb"
+    },
+    {
+      "path": "results_template.json",
+      "bytes": 255,
+      "sha1": "c913c813dbbe3227b93c0d2a16b48194ee900b74"
+    },
+    {
+      "path": "schemas/campaign_result.json",
+      "bytes": 1515,
+      "sha1": "634f4f504b093697a49b6a8aac4a228fd2c60b9a"
+    },
+    {
+      "path": "schemas/copy_input.json",
+      "bytes": 4032,
+      "sha1": "6464c5e2458a70c97f7c3ed81bf046ce122e5d69"
+    },
+    {
+      "path": "schemas/evidence_item.json",
+      "bytes": 433,
+      "sha1": "6ca919a7124df3a8f13e76b02a42990dd9cb80f4"
+    },
+    {
+      "path": "schemas/experiment.json",
+      "bytes": 1810,
+      "sha1": "2e7fb4c7eb5ce8d366785ab79a3f6c632ffa8805"
+    },
+    {
+      "path": "schemas/funnel_input.json",
+      "bytes": 3814,
+      "sha1": "4d83b07251f13715bef0eaa6ad94f0d12a391722"
+    },
+    {
+      "path": "schemas/import_bundle.json",
+      "bytes": 2165,
+      "sha1": "9fd9f9ad534a33e426ec2f2891d1314c7fe63e9b"
+    },
+    {
+      "path": "schemas/insight.json",
+      "bytes": 1179,
+      "sha1": "397b9a7f6e2f670fc3e2a026839f1b636b89c87c"
+    },
+    {
+      "path": "schemas/offer.json",
+      "bytes": 2578,
+      "sha1": "514ece664a559c2e083b6de0d4532ceca87428d1"
+    },
+    {
+      "path": "schemas/record.json",
+      "bytes": 1361,
+      "sha1": "00f6f87b635eb2e4f6379358b2571a83c1341be9"
+    },
+    {
+      "path": "schemas/voc_document.json",
+      "bytes": 797,
+      "sha1": "eb4d7c8af36c7217967b8abd977de55844d12e35"
+    }
+  ],
+  "total_bytes": 166488,
+  "size_limit_bytes": 1500000,
+  "within_limit": true,
+  "knowledge_records": 0,
+  "knowledge_trimmed": 0
+}

@@ -1,0 +1,190 @@
+{
+  "_note": "Output of the real code on ILLUSTRATIVE fictional inputs.",
+  "input": {
+    "name": "ExampleDispatch Pro",
+    "target_customer": "owner-operators of HVAC and plumbing companies with 3-15 technicians",
+    "problem": "Scheduling technicians by phone and spreadsheet takes hours every week and causes double-bookings",
+    "desired_outcome": "Schedule a full week of jobs in under 30 minutes with no double-bookings",
+    "value_proposition": "See and schedule every technician's week on one screen, with automatic text reminders",
+    "differentiation": "Unlike spreadsheets, technicians see jobs on their phones and customers get reminders automatically",
+    "price": 79,
+    "currency": "$",
+    "billing": "monthly",
+    "packaging": "One plan, up to 15 technicians",
+    "deliverables": [
+      "drag-and-drop schedule",
+      "technician mobile app",
+      "SMS reminders",
+      "customer list import"
+    ],
+    "time_to_value_days": 1,
+    "risk_reversal": "",
+    "proof": [],
+    "implementation_effort": "low",
+    "alternatives": [
+      "spreadsheets",
+      "BigFSM"
+    ],
+    "fulfillment_cost": 12,
+    "acquisition_cost_estimate": 250,
+    "expected_purchases_per_customer": 18
+  },
+  "output": {
+    "offer": "ExampleDispatch Pro",
+    "overall": 3.78,
+    "pass_threshold": 3.5,
+    "passed": false,
+    "blockers": [
+      "proof"
+    ],
+    "criteria": [
+      {
+        "criterion": "target_customer",
+        "score": 5,
+        "issues": [],
+        "fixes": [],
+        "weight": 1.0
+      },
+      {
+        "criterion": "problem",
+        "score": 3.6,
+        "issues": [],
+        "fixes": [],
+        "weight": 1.0
+      },
+      {
+        "criterion": "outcome",
+        "score": 4.6,
+        "issues": [],
+        "fixes": [],
+        "weight": 1.0
+      },
+      {
+        "criterion": "value_proposition",
+        "score": 3.6,
+        "issues": [],
+        "fixes": [],
+        "weight": 1.2
+      },
+      {
+        "criterion": "differentiation",
+        "score": 5,
+        "issues": [],
+        "fixes": [],
+        "weight": 1.0
+      },
+      {
+        "criterion": "pricing",
+        "score": 4,
+        "issues": [],
+        "fixes": [],
+        "weight": 1.0
+      },
+      {
+        "criterion": "packaging",
+        "score": 3.5,
+        "issues": [],
+        "fixes": [],
+        "weight": 0.6
+      },
+      {
+        "criterion": "deliverables",
+        "score": 5,
+        "issues": [],
+        "fixes": [],
+        "weight": 0.6
+      },
+      {
+        "criterion": "time_to_value",
+        "score": 5,
+        "issues": [],
+        "fixes": [],
+        "weight": 0.8
+      },
+      {
+        "criterion": "risk_reversal",
+        "score": 2,
+        "issues": [
+          "No risk reversal"
+        ],
+        "fixes": [
+          "Consider a trial, pilot, milestone billing or a guarantee you can honour (legal review)"
+        ],
+        "weight": 0.8
+      },
+      {
+        "criterion": "proof",
+        "score": 0,
+        "issues": [
+          "No verified proof"
+        ],
+        "fixes": [
+          "Collect real reviews, case data, a demo or a pilot result"
+        ],
+        "weight": 1.2
+      },
+      {
+        "criterion": "urgency",
+        "score": 3,
+        "issues": [
+          "No reason to act now"
+        ],
+        "fixes": [
+          "Tie timing to a real event in the buyer's world (season, deadline, cost of delay)"
+        ],
+        "weight": 0.5
+      },
+      {
+        "criterion": "friction",
+        "score": 4,
+        "issues": [],
+        "fixes": [],
+        "weight": 0.7
+      },
+      {
+        "criterion": "alternatives",
+        "score": 4,
+        "issues": [],
+        "fixes": [],
+        "weight": 0.6
+      },
+      {
+        "criterion": "economics",
+        "score": 5,
+        "issues": [],
+        "fixes": [],
+        "weight": 1.2
+      }
+    ],
+    "economics": {
+      "price": 79,
+      "fulfillment_cost": 12,
+      "cac": 250,
+      "purchases_per_customer": 18,
+      "gross_profit_per_purchase": 67,
+      "gross_margin": 0.848,
+      "gross_profit_per_customer": 1206,
+      "profit_after_cac": 956,
+      "ltv_to_cac": 4.82,
+      "status": "computed"
+    },
+    "top_improvements": [
+      {
+        "criterion": "proof",
+        "issue": "No verified proof",
+        "fix": "Collect real reviews, case data, a demo or a pilot result"
+      },
+      {
+        "criterion": "risk_reversal",
+        "issue": "No risk reversal",
+        "fix": "Consider a trial, pilot, milestone billing or a guarantee you can honour (legal review)"
+      },
+      {
+        "criterion": "urgency",
+        "issue": "No reason to act now",
+        "fix": "Tie timing to a real event in the buyer's world (season, deadline, cost of delay)"
+      }
+    ],
+    "note": "Heuristic score of the offer definition. It is not a forecast of conversion or sales."
+  }
+}

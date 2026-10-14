@@ -1,0 +1,872 @@
+{
+  "_note": "Output of the real code on ILLUSTRATIVE fictional inputs.",
+  "input": {
+    "product": {
+      "name": "ExampleDispatch",
+      "category": "field-service scheduling app",
+      "description": "schedule and dispatch technicians for small HVAC and plumbing companies",
+      "alternatives": [
+        "spreadsheets",
+        "whiteboard",
+        "BigFSM"
+      ]
+    },
+    "documents": "(same as voc example)"
+  },
+  "output": {
+    "product": "ExampleDispatch",
+    "audience": "small HVAC/plumbing owners",
+    "inputs": {
+      "documents": 8,
+      "voc_used": true,
+      "behavioural_data": false
+    },
+    "jobs_to_be_done": [
+      {
+        "statement": "Help me manually / simple / something",
+        "statement_is_generated": true,
+        "basis": "inferred",
+        "confidence": "low",
+        "evidence": [
+          {
+            "basis": "observed",
+            "quote": "I just want something simple so that I can stop doing it manually.",
+            "source_ref": "example-review-1"
+          }
+        ],
+        "validate_by": "Switch interviews: situation -> motivation -> outcome."
+      },
+      {
+        "statement": "Help me looking / software / started",
+        "statement_is_generated": true,
+        "basis": "inferred",
+        "confidence": "low",
+        "evidence": [
+          {
+            "basis": "observed",
+            "quote": "That's when I started looking for software.",
+            "source_ref": "example-interview-1"
+          }
+        ],
+        "validate_by": "Switch interviews: situation -> motivation -> outcome."
+      },
+      {
+        "statement": "Help me glance / need / week",
+        "statement_is_generated": true,
+        "basis": "inferred",
+        "confidence": "low",
+        "evidence": [
+          {
+            "basis": "observed",
+            "quote": "I need to see the whole week at a glance.",
+            "source_ref": "example-interview-1"
+          }
+        ],
+        "validate_by": "Switch interviews: situation -> motivation -> outcome."
+      }
+    ],
+    "pain_points": [
+      {
+        "id": "P1",
+        "statement": "every week / takes hours / scheduling",
+        "statement_is_generated": true,
+        "representative_quote": "Scheduling takes hours every week.",
+        "basis": "observed",
+        "confidence": "low",
+        "evidence": [
+          {
+            "basis": "observed",
+            "quote": "Scheduling takes hours every week.",
+            "source_ref": "example-survey-1"
+          },
+          {
+            "basis": "observed",
+            "quote": "Scheduling my techs takes hours every week and someone always gets double-booked.",
+            "source_ref": "example-review-1"
+          }
+        ],
+        "document_count": 2,
+        "validate_by": "Confirm with 3-5 more customers; check frequency in a larger sample."
+      },
+      {
+        "id": "P2",
+        "statement": "frustrated / spreadsheets",
+        "statement_is_generated": true,
+        "representative_quote": "I was so frustrated with spreadsheets.",
+        "basis": "observed",
+        "confidence": "low",
+        "evidence": [
+          {
+            "basis": "observed",
+            "quote": "I was so frustrated with spreadsheets.",
+            "source_ref": "example-review-1"
+          }
+        ],
+        "document_count": 1,
+        "validate_by": "Confirm with 3-5 more customers; check frequency in a larger sample."
+      },
+      {
+        "id": "P3",
+        "statement": "manually / simple / something",
+        "statement_is_generated": true,
+        "representative_quote": "I just want something simple so that I can stop doing it manually.",
+        "basis": "observed",
+        "confidence": "low",
+        "evidence": [
+          {
+            "basis": "observed",
+            "quote": "I just want something simple so that I can stop doing it manually.",
+            "source_ref": "example-review-1"
+          }
+        ],
+        "document_count": 1,
+        "validate_by": "Confirm with 3-5 more customers; check frequency in a larger sample."
+      },
+      {
+        "id": "P4",
+        "statement": "confusing / couldn't / customer",
+        "statement_is_generated": true,
+        "representative_quote": "The setup was confusing, I couldn't figure out how to import my customer list.",
+        "basis": "observed",
+        "confidence": "low",
+        "evidence": [
+          {
+            "basis": "observed",
+            "quote": "The setup was confusing, I couldn't figure out how to import my customer list.",
+            "source_ref": "example-ticket-1"
+          }
+        ],
+        "document_count": 1,
+        "validate_by": "Confirm with 3-5 more customers; check frequency in a larger sample."
+      },
+      {
+        "id": "PC1",
+        "statement": "bigfsm / crashing / kept",
+        "statement_is_generated": true,
+        "representative_quote": "Switched from BigFSM because it kept crashing and support was terrible.",
+        "basis": "observed",
+        "confidence": "low",
+        "evidence": [
+          {
+            "basis": "observed",
+            "quote": "Switched from BigFSM because it kept crashing and support was terrible.",
+            "source_ref": "example-review-2"
+          }
+        ],
+        "document_count": 1,
+        "validate_by": "Confirm with 3-5 more customers; check frequency in a larger sample."
+      },
+      {
+        "id": "PC2",
+        "statement": "app / areas / bad",
+        "statement_is_generated": true,
+        "representative_quote": "We cancelled because the mobile app was slow in areas with bad signal.",
+        "basis": "observed",
+        "confidence": "low",
+        "evidence": [
+          {
+            "basis": "observed",
+            "quote": "We cancelled because the mobile app was slow in areas with bad signal.",
+            "source_ref": "example-churn-1"
+          }
+        ],
+        "document_count": 1,
+        "validate_by": "Confirm with 3-5 more customers; check frequency in a larger sample."
+      }
+    ],
+    "desired_outcomes": [
+      {
+        "id": "O1",
+        "statement": "manually / simple / something",
+        "statement_is_generated": true,
+        "representative_quote": "I just want something simple so that I can stop doing it manually.",
+        "basis": "observed",
+        "confidence": "low",
+        "evidence": [
+          {
+            "basis": "observed",
+            "quote": "I just want something simple so that I can stop doing it manually.",
+            "source_ref": "example-review-1"
+          }
+        ],
+        "document_count": 1,
+        "validate_by": "Confirm with 3-5 more customers; check frequency in a larger sample."
+      },
+      {
+        "id": "O2",
+        "statement": "looking / software / started",
+        "statement_is_generated": true,
+        "representative_quote": "That's when I started looking for software.",
+        "basis": "observed",
+        "confidence": "low",
+        "evidence": [
+          {
+            "basis": "observed",
+            "quote": "That's when I started looking for software.",
+            "source_ref": "example-interview-1"
+          }
+        ],
+        "document_count": 1,
+        "validate_by": "Confirm with 3-5 more customers; check frequency in a larger sample."
+      },
+      {
+        "id": "O3",
+        "statement": "glance / need / week",
+        "statement_is_generated": true,
+        "representative_quote": "I need to see the whole week at a glance.",
+        "basis": "observed",
+        "confidence": "low",
+        "evidence": [
+          {
+            "basis": "observed",
+            "quote": "I need to see the whole week at a glance.",
+            "source_ref": "example-interview-1"
+          }
+        ],
+        "document_count": 1,
+        "validate_by": "Confirm with 3-5 more customers; check frequency in a larger sample."
+      },
+      {
+        "id": "O4",
+        "statement": "jobs / phones / techs",
+        "statement_is_generated": true,
+        "representative_quote": "I wish the techs could see their jobs on their phones.",
+        "basis": "observed",
+        "confidence": "low",
+        "evidence": [
+          {
+            "basis": "observed",
+            "quote": "I wish the techs could see their jobs on their phones.",
+            "source_ref": "example-survey-1"
+          }
+        ],
+        "document_count": 1,
+        "validate_by": "Confirm with 3-5 more customers; check frequency in a larger sample."
+      },
+      {
+        "id": "VF1",
+        "statement": "easy / love / set",
+        "statement_is_generated": true,
+        "representative_quote": "Love how easy it is to set up.",
+        "basis": "observed",
+        "confidence": "low",
+        "evidence": [
+          {
+            "basis": "observed",
+            "quote": "Love how easy it is to set up.",
+            "source_ref": "example-review-3"
+          }
+        ],
+        "document_count": 1,
+        "validate_by": "Confirm with 3-5 more customers; check frequency in a larger sample."
+      },
+      {
+        "id": "VF2",
+        "statement": "every / hours / saves",
+        "statement_is_generated": true,
+        "representative_quote": "Saves me hours every week on scheduling.",
+        "basis": "observed",
+        "confidence": "low",
+        "evidence": [
+          {
+            "basis": "observed",
+            "quote": "Saves me hours every week on scheduling.",
+            "source_ref": "example-review-3"
+          }
+        ],
+        "document_count": 1,
+        "validate_by": "Confirm with 3-5 more customers; check frequency in a larger sample."
+      }
+    ],
+    "purchase_triggers": [
+      {
+        "id": "T1",
+        "statement": "board / calls / emergency",
+        "statement_is_generated": true,
+        "representative_quote": "The last straw was when we missed two emergency calls in one week because the board was wrong.",
+        "basis": "observed",
+        "confidence": "low",
+        "evidence": [
+          {
+            "basis": "observed",
+            "quote": "The last straw was when we missed two emergency calls in one week because the board was wrong.",
+            "source_ref": "example-interview-1"
+          }
+        ],
+        "document_count": 1,
+        "validate_by": "Confirm with 3-5 more customers; check frequency in a larger sample."
+      },
+      {
+        "id": "T2",
+        "statement": "looking / software / started",
+        "statement_is_generated": true,
+        "representative_quote": "That's when I started looking for software.",
+        "basis": "observed",
+        "confidence": "low",
+        "evidence": [
+          {
+            "basis": "observed",
+            "quote": "That's when I started looking for software.",
+            "source_ref": "example-interview-1"
+          }
+        ],
+        "document_count": 1,
+        "validate_by": "Confirm with 3-5 more customers; check frequency in a larger sample."
+      }
+    ],
+    "buy_now_vs_later": {
+      "now": {
+        "signals": [],
+        "document_count": 0,
+        "basis": "hypothesis",
+        "note": "Real deadlines/events only. Never manufacture urgency."
+      },
+      "later": {
+        "signals": [
+          {
+            "basis": "observed",
+            "quote": "Honestly it looks good but it's too expensive for a small shop like mine, not sure it's worth it.",
+            "source_ref": "example-call-1"
+          }
+        ],
+        "document_count": 1,
+        "basis": "observed"
+      }
+    },
+    "existing_alternatives": [
+      {
+        "name": "spreadsheets",
+        "basis": "inferred",
+        "note": "supplied by operator"
+      },
+      {
+        "name": "whiteboard",
+        "basis": "inferred",
+        "note": "supplied by operator"
+      },
+      {
+        "name": "BigFSM",
+        "basis": "inferred",
+        "note": "supplied by operator"
+      },
+      {
+        "name": "spreadsheets",
+        "basis": "observed",
+        "document_count": 1,
+        "negative_context_count": 0,
+        "evidence": [
+          {
+            "quote": "I was so frustrated with spreadsheets.",
+            "verbatim": true,
+            "doc_id": "r1",
+            "source_ref": "example-review-1"
+          }
+        ]
+      },
+      {
+        "name": "BigFSM",
+        "basis": "observed",
+        "document_count": 1,
+        "negative_context_count": 1,
+        "evidence": [
+          {
+            "quote": "Switched from BigFSM because it kept crashing and support was terrible.",
+            "verbatim": true,
+            "doc_id": "r2",
+            "source_ref": "example-review-2"
+          }
+        ]
+      },
+      {
+        "name": "current workaround / DIY",
+        "basis": "observed",
+        "document_count": 1,
+        "evidence": [
+          {
+            "basis": "observed",
+            "quote": "I was so frustrated with spreadsheets.",
+            "source_ref": "example-review-1"
+          },
+          {
+            "basis": "observed",
+            "quote": "Scheduling my techs takes hours every week and someone always gets double-booked.",
+            "source_ref": "example-review-1"
+          }
+        ]
+      }
+    ],
+    "reasons_for_distrust": [],
+    "objections": [
+      {
+        "id": "OB1",
+        "statement": "expensive / good / like",
+        "statement_is_generated": true,
+        "representative_quote": "Honestly it looks good but it's too expensive for a small shop like mine, not sure it's worth it.",
+        "basis": "observed",
+        "confidence": "low",
+        "evidence": [
+          {
+            "basis": "observed",
+            "quote": "Honestly it looks good but it's too expensive for a small shop like mine, not sure it's worth it.",
+            "source_ref": "example-call-1"
+          }
+        ],
+        "document_count": 1,
+        "validate_by": "Confirm with 3-5 more customers; check frequency in a larger sample."
+      },
+      {
+        "id": "OB2",
+        "statement": "customer / data / moving",
+        "statement_is_generated": true,
+        "representative_quote": "I'm also worried about moving all our customer data over.",
+        "basis": "observed",
+        "confidence": "low",
+        "evidence": [
+          {
+            "basis": "observed",
+            "quote": "I'm also worried about moving all our customer data over.",
+            "source_ref": "example-call-1"
+          }
+        ],
+        "document_count": 1,
+        "validate_by": "Confirm with 3-5 more customers; check frequency in a larger sample."
+      }
+    ],
+    "switching_reasons": [
+      {
+        "id": "SW1",
+        "statement": "bigfsm / crashing / kept",
+        "statement_is_generated": true,
+        "representative_quote": "Switched from BigFSM because it kept crashing and support was terrible.",
+        "basis": "observed",
+        "confidence": "low",
+        "evidence": [
+          {
+            "basis": "observed",
+            "quote": "Switched from BigFSM because it kept crashing and support was terrible.",
+            "source_ref": "example-review-2"
+          }
+        ],
+        "document_count": 1,
+        "validate_by": "Confirm with 3-5 more customers; check frequency in a larger sample."
+      }
+    ],
+    "dimensions": {
+      "desires_outcomes": {
+        "signal": "present",
+        "document_count": 3,
+        "share_of_documents": 0.38,
+        "basis": "observed",
+        "confidence": "medium",
+        "evidence": [
+          {
+            "basis": "observed",
+            "quote": "I just want something simple so that I can stop doing it manually.",
+            "source_ref": "example-review-1"
+          },
+          {
+            "basis": "observed",
+            "quote": "I need to see the whole week at a glance.",
+            "source_ref": "example-interview-1"
+          }
+        ],
+        "validate_by": "Interview: 'What would have to be true for this to be a success for you?'"
+      },
+      "problems_frustrations": {
+        "signal": "present",
+        "document_count": 1,
+        "share_of_documents": 0.12,
+        "basis": "observed",
+        "confidence": "low",
+        "evidence": [
+          {
+            "basis": "observed",
+            "quote": "I was so frustrated with spreadsheets.",
+            "source_ref": "example-review-1"
+          }
+        ],
+        "validate_by": "Interview: 'Tell me about the last time this went wrong.'"
+      },
+      "emotional_motivation": {
+        "signal": "present",
+        "document_count": 1,
+        "share_of_documents": 0.12,
+        "basis": "observed",
+        "confidence": "low",
+        "evidence": [
+          {
+            "basis": "observed",
+            "quote": "I'm also worried about moving all our customer data over.",
+            "source_ref": "example-call-1"
+          }
+        ],
+        "validate_by": "Interview follow-up: 'How did that make you feel?' and code answers."
+      },
+      "practical_motivation": {
+        "signal": "present",
+        "document_count": 3,
+        "share_of_documents": 0.38,
+        "basis": "observed",
+        "confidence": "medium",
+        "evidence": [
+          {
+            "basis": "observed",
+            "quote": "Scheduling my techs takes hours every week and someone always gets double-booked.",
+            "source_ref": "example-review-1"
+          },
+          {
+            "basis": "observed",
+            "quote": "Saves me hours every week on scheduling.",
+            "source_ref": "example-review-3"
+          }
+        ],
+        "validate_by": "Survey: rank outcomes (time, money, quality, risk)."
+      },
+      "purchase_triggers": {
+        "signal": "present",
+        "document_count": 1,
+        "share_of_documents": 0.12,
+        "basis": "observed",
+        "confidence": "low",
+        "evidence": [
+          {
+            "basis": "observed",
+            "quote": "The last straw was when we missed two emergency calls in one week because the board was wrong.",
+            "source_ref": "example-interview-1"
+          },
+          {
+            "basis": "observed",
+            "quote": "That's when I started looking for software.",
+            "source_ref": "example-interview-1"
+          }
+        ],
+        "validate_by": "Switch interview: 'What happened that made you start looking?'"
+      },
+      "urgency_timing": {
+        "signal": "no evidence in inputs",
+        "document_count": 0,
+        "basis": "hypothesis",
+        "confidence": "low",
+        "evidence": [],
+        "validate_by": "Ask for timeline in discovery; compare time-to-purchase across segments."
+      },
+      "perceived_value": {
+        "signal": "present",
+        "document_count": 1,
+        "share_of_documents": 0.12,
+        "basis": "observed",
+        "confidence": "low",
+        "evidence": [
+          {
+            "basis": "observed",
+            "quote": "Honestly it looks good but it's too expensive for a small shop like mine, not sure it's worth it.",
+            "source_ref": "example-call-1"
+          }
+        ],
+        "validate_by": "Van Westendorp or willingness-to-pay interview questions."
+      },
+      "perceived_risk": {
+        "signal": "present",
+        "document_count": 1,
+        "share_of_documents": 0.12,
+        "basis": "observed",
+        "confidence": "low",
+        "evidence": [
+          {
+            "basis": "observed",
+            "quote": "Honestly it looks good but it's too expensive for a small shop like mine, not sure it's worth it.",
+            "source_ref": "example-call-1"
+          }
+        ],
+        "validate_by": "Ask 'What's the worst that could happen if you bought this?'"
+      },
+      "trust_credibility": {
+        "signal": "no evidence in inputs",
+        "document_count": 0,
+        "basis": "hypothesis",
+        "confidence": "low",
+        "evidence": [],
+        "validate_by": "Test proof placement (A/B) and ask what would make them confident."
+      },
+      "social_proof": {
+        "signal": "no evidence in inputs",
+        "document_count": 0,
+        "basis": "hypothesis",
+        "confidence": "low",
+        "evidence": [],
+        "validate_by": "Attribution survey: 'How did you hear about us?'"
+      },
+      "loss_aversion": {
+        "signal": "present",
+        "document_count": 1,
+        "share_of_documents": 0.12,
+        "basis": "observed",
+        "confidence": "low",
+        "evidence": [
+          {
+            "basis": "observed",
+            "quote": "The last straw was when we missed two emergency calls in one week because the board was wrong.",
+            "source_ref": "example-interview-1"
+          }
+        ],
+        "validate_by": "A/B test gain-framed vs loss-framed headline."
+      },
+      "cognitive_load": {
+        "signal": "present",
+        "document_count": 2,
+        "share_of_documents": 0.25,
+        "basis": "observed",
+        "confidence": "low",
+        "evidence": [
+          {
+            "basis": "observed",
+            "quote": "Way too complicated for a 6-truck shop.",
+            "source_ref": "example-review-2"
+          },
+          {
+            "basis": "observed",
+            "quote": "The setup was confusing, I couldn't figure out how to import my customer list.",
+            "source_ref": "example-ticket-1"
+          }
+        ],
+        "validate_by": "5-second test and task-completion usability test."
+      },
+      "decision_fatigue": {
+        "signal": "no evidence in inputs",
+        "document_count": 0,
+        "basis": "hypothesis",
+        "confidence": "low",
+        "evidence": [],
+        "validate_by": "Track pricing-page dwell and plan-choice abandonment."
+      },
+      "switching_costs": {
+        "signal": "present",
+        "document_count": 3,
+        "share_of_documents": 0.38,
+        "basis": "observed",
+        "confidence": "medium",
+        "evidence": [
+          {
+            "basis": "observed",
+            "quote": "Switched from BigFSM because it kept crashing and support was terrible.",
+            "source_ref": "example-review-2"
+          },
+          {
+            "basis": "observed",
+            "quote": "Love how easy it is to set up.",
+            "source_ref": "example-review-3"
+          }
+        ],
+        "validate_by": "Ask current-solution users what stops them switching."
+      },
+      "status_identity": {
+        "signal": "no evidence in inputs",
+        "document_count": 0,
+        "basis": "hypothesis",
+        "confidence": "low",
+        "evidence": [],
+        "validate_by": "Interview: 'Who else sees the result of this?'"
+      },
+      "convenience_effort": {
+        "signal": "present",
+        "document_count": 2,
+        "share_of_documents": 0.25,
+        "basis": "observed",
+        "confidence": "low",
+        "evidence": [
+          {
+            "basis": "observed",
+            "quote": "I just want something simple so that I can stop doing it manually.",
+            "source_ref": "example-review-1"
+          },
+          {
+            "basis": "observed",
+            "quote": "Love how easy it is to set up.",
+            "source_ref": "example-review-3"
+          }
+        ],
+        "validate_by": "Measure time-to-first-value and step completion."
+      },
+      "price_sensitivity": {
+        "signal": "present",
+        "document_count": 1,
+        "share_of_documents": 0.12,
+        "basis": "observed",
+        "confidence": "low",
+        "evidence": [
+          {
+            "basis": "observed",
+            "quote": "Honestly it looks good but it's too expensive for a small shop like mine, not sure it's worth it.",
+            "source_ref": "example-call-1"
+          }
+        ],
+        "validate_by": "Price test on landing page (fake-door / plan anchoring) with approval."
+      },
+      "habits_alternatives": {
+        "signal": "present",
+        "document_count": 1,
+        "share_of_documents": 0.12,
+        "basis": "observed",
+        "confidence": "low",
+        "evidence": [
+          {
+            "basis": "observed",
+            "quote": "I was so frustrated with spreadsheets.",
+            "source_ref": "example-review-1"
+          },
+          {
+            "basis": "observed",
+            "quote": "Scheduling my techs takes hours every week and someone always gets double-booked.",
+            "source_ref": "example-review-1"
+          }
+        ],
+        "validate_by": "Ask 'How do you handle this today?'"
+      },
+      "objections_friction": {
+        "signal": "present",
+        "document_count": 1,
+        "share_of_documents": 0.12,
+        "basis": "observed",
+        "confidence": "low",
+        "evidence": [
+          {
+            "basis": "observed",
+            "quote": "Honestly it looks good but it's too expensive for a small shop like mine, not sure it's worth it.",
+            "source_ref": "example-call-1"
+          }
+        ],
+        "validate_by": "Log objections in sales calls; count by type."
+      },
+      "awareness_sophistication": {
+        "level": "solution_aware",
+        "basis": "inferred",
+        "confidence": "low",
+        "reason": "mentions competitors/solutions",
+        "note": "Awareness differs by segment and traffic source; treat as a starting hypothesis."
+      },
+      "stated_vs_observed": {
+        "pairs": [],
+        "basis": "hypothesis",
+        "confidence": "low",
+        "note": "No behavioural data supplied: all preferences here are stated, not observed.",
+        "validate_by": "Compare survey/interview statements with analytics or purchase data."
+      }
+    },
+    "customer_terms": [
+      {
+        "phrase": "hours every week",
+        "document_count": 3
+      },
+      {
+        "phrase": "scheduling",
+        "document_count": 3
+      },
+      {
+        "phrase": "takes hours",
+        "document_count": 2
+      },
+      {
+        "phrase": "customer",
+        "document_count": 2
+      },
+      {
+        "phrase": "shop",
+        "document_count": 2
+      },
+      {
+        "phrase": "techs",
+        "document_count": 2
+      }
+    ],
+    "messaging_implications": [
+      {
+        "implication": "Lead with the most frequent pain, in the customer's words: \"Scheduling takes hours every week.\" (2 docs)",
+        "based_on": [
+          "P1"
+        ],
+        "basis": "inferred",
+        "use_terms": [
+          "hours every week",
+          "scheduling",
+          "takes hours",
+          "customer",
+          "shop"
+        ]
+      },
+      {
+        "implication": "Frame the promise around the outcome customers ask for: \"I just want something simple so that I can stop doing it manually.\" (1 doc)",
+        "based_on": [
+          "O1"
+        ],
+        "basis": "inferred"
+      },
+      {
+        "implication": "Answer the top objection before the CTA: \"Honestly it looks good but it's too expensive for a small shop like mine, not sure it's worth it.\" (1 doc)",
+        "based_on": [
+          "OB1"
+        ],
+        "basis": "inferred"
+      },
+      {
+        "implication": "Reduce choices and jargon: one primary CTA, one plan highlighted, plain language",
+        "based_on": [
+          "dimensions.cognitive_load"
+        ],
+        "basis": "inferred"
+      },
+      {
+        "implication": "Anchor price against the cost of the problem or current workaround; show what is included",
+        "based_on": [
+          "dimensions.price_sensitivity"
+        ],
+        "basis": "inferred"
+      },
+      {
+        "implication": "Address switching effort explicitly (setup time, migration help, no lock-in if true)",
+        "based_on": [
+          "dimensions.switching_costs"
+        ],
+        "basis": "inferred"
+      },
+      {
+        "implication": "Test loss-framed messaging (what the current situation costs) against gain framing",
+        "based_on": [
+          "dimensions.loss_aversion"
+        ],
+        "basis": "hypothesis"
+      }
+    ],
+    "validation_plan": [
+      {
+        "hypothesis": "Dimension 'urgency_timing' matters for this audience",
+        "method": "Ask for timeline in discovery; compare time-to-purchase across segments."
+      },
+      {
+        "hypothesis": "Dimension 'trust_credibility' matters for this audience",
+        "method": "Test proof placement (A/B) and ask what would make them confident."
+      },
+      {
+        "hypothesis": "Dimension 'social_proof' matters for this audience",
+        "method": "Attribution survey: 'How did you hear about us?'"
+      },
+      {
+        "hypothesis": "Dimension 'decision_fatigue' matters for this audience",
+        "method": "Track pricing-page dwell and plan-choice abandonment."
+      },
+      {
+        "hypothesis": "Dimension 'status_identity' matters for this audience",
+        "method": "Interview: 'Who else sees the result of this?'"
+      },
+      {
+        "hypothesis": "Dimension 'stated_vs_observed' matters for this audience",
+        "method": "Compare survey/interview statements with analytics or purchase data."
+      }
+    ],
+    "segments_note": "Single profile built from pooled inputs. If inputs mix segments (e.g. owners vs staff, new vs returning), run build_profile per segment: triggers and objections usually differ.",
+    "evidence_summary": {
+      "observed_insights": 16,
+      "hypotheses": 0,
+      "dimensions_with_evidence": 14
+    }
+  }
+}

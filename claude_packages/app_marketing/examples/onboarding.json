@@ -1,0 +1,81 @@
+{
+  "_note": "Output of the real code on ILLUSTRATIVE fictional inputs.",
+  "input": {
+    "steps": "see input"
+  },
+  "output": {
+    "steps_before_value": 4,
+    "seconds_before_value": 570,
+    "recommendations": [
+      {
+        "area": "time_to_value",
+        "severity": "high",
+        "finding": "4 required steps / ~570s before first value",
+        "recommendation": "Defer non-essential steps until after the first win; make them optional.",
+        "hypothesis": "Shorter time-to-value raises activation.",
+        "how_to_test": "A/B test or usability test",
+        "evidence": [
+          "signup",
+          "verify email",
+          "company profile",
+          "import customers"
+        ],
+        "line": null
+      },
+      {
+        "area": "signup_friction",
+        "severity": "medium",
+        "finding": "13 form fields before value",
+        "recommendation": "Collect only email/password (or SSO) up front.",
+        "hypothesis": "Fewer fields reduce signup abandonment.",
+        "how_to_test": "A/B test or usability test",
+        "evidence": [],
+        "line": null
+      },
+      {
+        "area": "signup_friction",
+        "severity": "medium",
+        "finding": "Email verification required before any value",
+        "recommendation": "Let users in first; verify later (before sensitive actions).",
+        "hypothesis": "Context switching to email loses users.",
+        "how_to_test": "A/B test or usability test",
+        "evidence": [],
+        "line": null
+      },
+      {
+        "area": "upgrade_flow",
+        "severity": "medium",
+        "finding": "Upgrade prompt on 'on_login'",
+        "recommendation": "Trigger upgrades at moments of need (hit a limit, use a premium feature).",
+        "hypothesis": "Contextual prompts feel helpful rather than nagging.",
+        "how_to_test": "A/B test or usability test",
+        "evidence": [
+          "Upgrade to Pro today"
+        ],
+        "line": null
+      },
+      {
+        "area": "onboarding",
+        "severity": "low",
+        "finding": "Multi-step onboarding without progress indicator",
+        "recommendation": "Show steps remaining.",
+        "hypothesis": "Visible progress reduces abandonment in multi-step flows.",
+        "how_to_test": "A/B test or usability test",
+        "evidence": [],
+        "line": null
+      },
+      {
+        "area": "upgrade_flow",
+        "severity": "low",
+        "finding": "Upgrade copy doesn't state the user benefit",
+        "recommendation": "Say what they get / keep by upgrading.",
+        "hypothesis": "Benefit-led prompts clarify value.",
+        "how_to_test": "A/B test or usability test",
+        "evidence": [
+          "Upgrade to Pro today"
+        ],
+        "line": null
+      }
+    ]
+  }
+}

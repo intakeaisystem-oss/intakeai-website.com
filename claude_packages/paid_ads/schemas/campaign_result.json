@@ -1,0 +1,93 @@
+{
+  "type": "object",
+  "required": [
+    "title",
+    "metrics"
+  ],
+  "properties": {
+    "title": {
+      "type": "string"
+    },
+    "platform": {
+      "type": "string"
+    },
+    "variant_id": {
+      "type": "string"
+    },
+    "experiment_id": {
+      "type": "string"
+    },
+    "product": {
+      "type": "string"
+    },
+    "audience": {
+      "type": "string"
+    },
+    "start_date": {
+      "type": "string"
+    },
+    "end_date": {
+      "type": "string"
+    },
+    "metrics": {
+      "type": "object",
+      "properties": {
+        "impressions": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "clicks": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "spend": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "leads": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "conversions": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "revenue": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "visitors": {
+          "type": [
+            "number",
+            "null"
+          ]
+        }
+      }
+    },
+    "data_source": {
+      "type": "string",
+      "enum": [
+        "platform_export",
+        "analytics",
+        "manual",
+        "crm",
+        "other"
+      ]
+    },
+    "notes": {
+      "type": "string"
+    }
+  }
+}

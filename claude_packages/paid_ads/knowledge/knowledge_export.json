@@ -1,0 +1,21 @@
+{
+  "format": "marketing_toolkit.knowledge.v1",
+  "generated_at": "2026-10-14T01:00:28Z",
+  "filters": {
+    "kinds": [
+      "ad_concept",
+      "ad_variant",
+      "campaign_result",
+      "campaign_hypothesis",
+      "experiment",
+      "approach",
+      "customer_insight",
+      "offer"
+    ],
+    "product": null,
+    "audience": null
+  },
+  "records": [],
+  "trimmed": 0,
+  "total_matching": 0
+}

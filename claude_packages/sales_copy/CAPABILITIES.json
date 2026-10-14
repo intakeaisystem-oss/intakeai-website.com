@@ -1,0 +1,95 @@
+{
+  "toolkit_version": "0.1.0",
+  "capabilities": [
+    {
+      "capability": "voc.analyze",
+      "area": "customer_research",
+      "description": "Categorise customer language into themes with verbatim quotes and confidence",
+      "type": "python_code",
+      "runs_in": "any Python 3.9+ sandbox (stdlib only)",
+      "requires": []
+    },
+    {
+      "capability": "psychology.build_profile",
+      "area": "customer_research",
+      "description": "Evidence-tagged customer profile across 21 psychological dimensions",
+      "type": "python_code",
+      "runs_in": "any Python 3.9+ sandbox (stdlib only)",
+      "requires": []
+    },
+    {
+      "capability": "offer.score_offer",
+      "area": "offers",
+      "description": "Score an offer on 15 criteria incl. seller economics; explains fixes",
+      "type": "python_code",
+      "runs_in": "any Python 3.9+ sandbox (stdlib only)",
+      "requires": []
+    },
+    {
+      "capability": "offer.generate_structures",
+      "area": "offers",
+      "description": "Alternative offer structures and awareness-level angles (placeholders, no invention)",
+      "type": "python_code",
+      "runs_in": "any Python 3.9+ sandbox (stdlib only)",
+      "requires": []
+    },
+    {
+      "capability": "copywriting.build_draft",
+      "area": "copy",
+      "description": "Framework skeleton (PAS, AIDA, BAB ...) from real inputs",
+      "type": "python_code",
+      "runs_in": "any Python 3.9+ sandbox (stdlib only)",
+      "requires": []
+    },
+    {
+      "capability": "copywriting.evaluate_copy",
+      "area": "copy",
+      "description": "Score copy on 12 criteria + channel limits + QC gate",
+      "type": "python_code",
+      "runs_in": "any Python 3.9+ sandbox (stdlib only)",
+      "requires": []
+    },
+    {
+      "capability": "qc.evaluate",
+      "area": "quality",
+      "description": "Reject/revise/approve gate: unsupported claims, fake scarcity, policy risks ...",
+      "type": "python_code",
+      "runs_in": "any Python 3.9+ sandbox (stdlib only)",
+      "requires": []
+    },
+    {
+      "capability": "components.render_landing",
+      "area": "components",
+      "description": "Accessible, mobile-first landing HTML; omits unverified proof",
+      "type": "python_code",
+      "runs_in": "any Python 3.9+ sandbox (stdlib only)",
+      "requires": []
+    },
+    {
+      "capability": "components.render_template",
+      "area": "components",
+      "description": "Email/ad brief/sales script templates; reports missing facts",
+      "type": "python_code",
+      "runs_in": "any Python 3.9+ sandbox (stdlib only)",
+      "requires": []
+    },
+    {
+      "capability": "components.validate_event",
+      "area": "components",
+      "description": "Analytics event schema validation",
+      "type": "python_code",
+      "runs_in": "any Python 3.9+ sandbox (stdlib only)",
+      "requires": []
+    },
+    {
+      "capability": "templates/LandingSections.jsx",
+      "type": "reference_code",
+      "description": "React components to copy into an app; needs the user's React build to run."
+    },
+    {
+      "capability": "ad platform / analytics / CRM access",
+      "type": "not_included",
+      "description": "No live integrations. Metrics must be supplied as exported data."
+    }
+  ]
+}

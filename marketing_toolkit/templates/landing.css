@@ -1,0 +1,28 @@
+/* Brand-neutral theme for LandingSections.jsx. Override the variables, not the rules. */
+:root {
+  --mk-bg: #ffffff; --mk-fg: #111111; --mk-muted: #555555;
+  --mk-accent: #2557d6; --mk-accent-fg: #ffffff;
+  --mk-radius: 10px; --mk-max: 1080px;
+  --mk-font: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --mk-bg: #0f1115; --mk-fg: #f2f2f2; --mk-muted: #a8a8a8; }
+}
+.mk-section { padding: 56px 16px; background: var(--mk-bg); color: var(--mk-fg); font: 16px/1.6 var(--mk-font); }
+.mk-wrap { max-width: var(--mk-max); margin: 0 auto; }
+.mk-section h1 { font-size: clamp(28px, 5vw, 48px); line-height: 1.15; margin: 0 0 12px; }
+.mk-section h2 { font-size: clamp(22px, 3.5vw, 32px); margin: 0 0 16px; }
+.mk-sub { color: var(--mk-muted); font-size: 18px; max-width: 640px; }
+.mk-cta { display: inline-block; background: var(--mk-accent); color: var(--mk-accent-fg); padding: 14px 22px;
+  border-radius: var(--mk-radius); text-decoration: none; font-weight: 600; border: 0; font-size: 16px; cursor: pointer; min-height: 44px; }
+.mk-cta:focus-visible { outline: 3px solid var(--mk-fg); outline-offset: 2px; }
+.mk-link { background: none; border: 0; color: var(--mk-muted); text-decoration: underline; cursor: pointer; }
+.mk-grid { display: grid; gap: 20px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); padding: 0; list-style: none; }
+.mk-card { border: 1px solid #8883; border-radius: var(--mk-radius); padding: 20px; }
+.mk-featured { border: 2px solid var(--mk-accent); }
+.mk-price { font-size: 32px; font-weight: 700; }
+.mk-note { color: var(--mk-muted); font-size: 14px; }
+.mk-form { display: grid; gap: 12px; max-width: 420px; }
+.mk-form input { padding: 12px; border-radius: 8px; border: 1px solid #8886; font-size: 16px; }
+.mk-section details { border-bottom: 1px solid #8883; padding: 12px 0; }
+.mk-section summary { cursor: pointer; font-weight: 600; }

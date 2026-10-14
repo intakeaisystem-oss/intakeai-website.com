@@ -1,0 +1,437 @@
+{
+  "_note": "Output of the real code on ILLUSTRATIVE fictional inputs.",
+  "input": {
+    "offer": {
+      "name": "ExampleDispatch Pro",
+      "target_customer": "owner-operators of HVAC and plumbing companies with 3-15 technicians",
+      "problem": "Scheduling technicians by phone and spreadsheet takes hours every week and causes double-bookings",
+      "desired_outcome": "Schedule a full week of jobs in under 30 minutes with no double-bookings",
+      "value_proposition": "See and schedule every technician's week on one screen, with automatic text reminders",
+      "differentiation": "Unlike spreadsheets, technicians see jobs on their phones and customers get reminders automatically",
+      "price": 79,
+      "currency": "$",
+      "billing": "monthly",
+      "packaging": "One plan, up to 15 technicians",
+      "deliverables": [
+        "drag-and-drop schedule",
+        "technician mobile app",
+        "SMS reminders",
+        "customer list import"
+      ],
+      "time_to_value_days": 1,
+      "risk_reversal": "",
+      "proof": [],
+      "implementation_effort": "low",
+      "alternatives": [
+        "spreadsheets",
+        "BigFSM"
+      ],
+      "fulfillment_cost": 12,
+      "acquisition_cost_estimate": 250,
+      "expected_purchases_per_customer": 18
+    },
+    "pains": [
+      "scheduling takes hours every week"
+    ],
+    "objections": [
+      "too expensive"
+    ]
+  },
+  "output": {
+    "objective": "leads",
+    "platforms": [
+      "meta"
+    ],
+    "concepts": [
+      {
+        "concept_id": "problem_led",
+        "angle": "problem_led",
+        "hook": "\"scheduling takes hours every week\" Sound familiar?",
+        "structure": "pain -> consequence -> solution -> CTA",
+        "main_message": "scheduling takes hours every week -> Schedule a full week of jobs in under 30 minutes with no double-bookings with ExampleDispatch Pro",
+        "proof_required": "optional",
+        "offer": "ExampleDispatch Pro",
+        "cta": "Start free trial",
+        "funnel_stage": "discovery",
+        "awareness_fit": [
+          "problem_aware"
+        ],
+        "platform_formats": {
+          "meta": [
+            "image",
+            "video (4:5/9:16)",
+            "carousel"
+          ]
+        },
+        "hypothesis": "For owner-operators of HVAC and plumbing companies with 3-15 technicians, a problem led creative will beat the current best on cost per qualified lead because [CUSTOMER INSIGHT / EVIDENCE ID]",
+        "measurement": {
+          "primary_metric": "cost per qualified lead",
+          "guardrails": [
+            "lead_to_customer",
+            "cpl"
+          ],
+          "decision_rule": "Compare against control with experiments.analyze(); no winner below minimum sample."
+        },
+        "landing_match": "Landing hero must repeat this hook's promise and offer.",
+        "likely_failure_points": [
+          "Pain not felt strongly by this audience; reads as negative."
+        ],
+        "missing_inputs": [],
+        "readiness": "ready"
+      },
+      {
+        "concept_id": "product_demo",
+        "angle": "product_demo",
+        "hook": "Watch ExampleDispatch Pro schedule a week of jobs in {TIME}",
+        "structure": "task -> screen/hands-on demo -> result -> CTA",
+        "main_message": "Show ExampleDispatch Pro doing schedule a week of jobs end-to-end",
+        "proof_required": "the demo itself (must be real footage)",
+        "offer": "ExampleDispatch Pro",
+        "cta": "Start free trial",
+        "funnel_stage": "discovery",
+        "awareness_fit": [
+          "solution_aware",
+          "product_aware"
+        ],
+        "platform_formats": {
+          "meta": [
+            "image",
+            "video (4:5/9:16)",
+            "carousel"
+          ]
+        },
+        "hypothesis": "For owner-operators of HVAC and plumbing companies with 3-15 technicians, a product demo creative will beat the current best on cost per qualified lead because [CUSTOMER INSIGHT / EVIDENCE ID]",
+        "measurement": {
+          "primary_metric": "cost per qualified lead",
+          "guardrails": [
+            "lead_to_customer",
+            "cpl"
+          ],
+          "decision_rule": "Compare against control with experiments.analyze(); no winner below minimum sample."
+        },
+        "landing_match": "Landing hero must repeat this hook's promise and offer.",
+        "likely_failure_points": [
+          "Demo too slow; value not visible in first 3 seconds."
+        ],
+        "missing_inputs": [],
+        "readiness": "ready"
+      },
+      {
+        "concept_id": "customer_proof",
+        "angle": "customer_proof",
+        "hook": "\"{VERIFIED_QUOTE}\"",
+        "structure": "real customer result -> how -> CTA",
+        "main_message": "Real customer result: [VERIFIED PROOF NEEDED]",
+        "proof_required": "verified, permissioned testimonial/case",
+        "offer": "ExampleDispatch Pro",
+        "cta": "Start free trial",
+        "funnel_stage": "consideration",
+        "awareness_fit": [
+          "product_aware"
+        ],
+        "platform_formats": {
+          "meta": [
+            "image",
+            "video (4:5/9:16)",
+            "carousel"
+          ]
+        },
+        "hypothesis": "For owner-operators of HVAC and plumbing companies with 3-15 technicians, a customer proof creative will beat the current best on cost per qualified lead because [CUSTOMER INSIGHT / EVIDENCE ID]",
+        "measurement": {
+          "primary_metric": "cost per qualified lead",
+          "guardrails": [
+            "lead_to_customer",
+            "cpl"
+          ],
+          "decision_rule": "Compare against control with experiments.analyze(); no winner below minimum sample."
+        },
+        "landing_match": "Landing hero must repeat this hook's promise and offer.",
+        "likely_failure_points": [
+          "Proof not relatable to the viewer's situation.",
+          "missing inputs: ['verified_quote']"
+        ],
+        "missing_inputs": [
+          "verified_quote"
+        ],
+        "readiness": "needs_input"
+      },
+      {
+        "concept_id": "objection_handling",
+        "angle": "objection_handling",
+        "hook": "\"too expensive for a small shop\"? Here's the honest answer.",
+        "structure": "objection -> truthful answer -> evidence -> CTA",
+        "main_message": "Answer 'too expensive for a small shop' truthfully with evidence",
+        "proof_required": "evidence that answers the objection",
+        "offer": "ExampleDispatch Pro",
+        "cta": "Start free trial",
+        "funnel_stage": "consideration",
+        "awareness_fit": [
+          "solution_aware",
+          "product_aware"
+        ],
+        "platform_formats": {
+          "meta": [
+            "image",
+            "video (4:5/9:16)",
+            "carousel"
+          ]
+        },
+        "hypothesis": "For owner-operators of HVAC and plumbing companies with 3-15 technicians, a objection handling creative will beat the current best on cost per qualified lead because [CUSTOMER INSIGHT / EVIDENCE ID]",
+        "measurement": {
+          "primary_metric": "cost per qualified lead",
+          "guardrails": [
+            "lead_to_customer",
+            "cpl"
+          ],
+          "decision_rule": "Compare against control with experiments.analyze(); no winner below minimum sample."
+        },
+        "landing_match": "Landing hero must repeat this hook's promise and offer.",
+        "likely_failure_points": [
+          "Raises an objection the viewer didn't have."
+        ],
+        "missing_inputs": [],
+        "readiness": "ready"
+      },
+      {
+        "concept_id": "comparison",
+        "angle": "comparison",
+        "hook": "spreadsheets vs ExampleDispatch Pro: Unlike spreadsheets, technicians see jobs on their phones and customers get reminders automatically",
+        "structure": "status quo -> concrete difference -> who it's for -> CTA",
+        "main_message": "Unlike spreadsheets, technicians see jobs on their phones and customers get reminders automatically vs spreadsheets",
+        "proof_required": "verifiable comparison facts",
+        "offer": "ExampleDispatch Pro",
+        "cta": "Start free trial",
+        "funnel_stage": "consideration",
+        "awareness_fit": [
+          "solution_aware"
+        ],
+        "platform_formats": {
+          "meta": [
+            "image",
+            "video (4:5/9:16)",
+            "carousel"
+          ]
+        },
+        "hypothesis": "For owner-operators of HVAC and plumbing companies with 3-15 technicians, a comparison creative will beat the current best on cost per qualified lead because [CUSTOMER INSIGHT / EVIDENCE ID]",
+        "measurement": {
+          "primary_metric": "cost per qualified lead",
+          "guardrails": [
+            "lead_to_customer",
+            "cpl"
+          ],
+          "decision_rule": "Compare against control with experiments.analyze(); no winner below minimum sample."
+        },
+        "landing_match": "Landing hero must repeat this hook's promise and offer.",
+        "likely_failure_points": [
+          "Unfair/unverifiable comparison: legal and policy risk."
+        ],
+        "missing_inputs": [],
+        "readiness": "ready"
+      },
+      {
+        "concept_id": "founder_story",
+        "angle": "founder_story",
+        "hook": "Why I built ExampleDispatch Pro",
+        "structure": "founder's real problem -> insight -> product -> CTA",
+        "main_message": "Founder explains the real problem that led to the product",
+        "proof_required": "authentic founder footage",
+        "offer": "ExampleDispatch Pro",
+        "cta": "Start free trial",
+        "funnel_stage": "discovery",
+        "awareness_fit": [
+          "unaware",
+          "problem_aware"
+        ],
+        "platform_formats": {
+          "meta": [
+            "image",
+            "video (4:5/9:16)",
+            "carousel"
+          ]
+        },
+        "hypothesis": "For owner-operators of HVAC and plumbing companies with 3-15 technicians, a founder story creative will beat the current best on cost per qualified lead because [CUSTOMER INSIGHT / EVIDENCE ID]",
+        "measurement": {
+          "primary_metric": "cost per qualified lead",
+          "guardrails": [
+            "lead_to_customer",
+            "cpl"
+          ],
+          "decision_rule": "Compare against control with experiments.analyze(); no winner below minimum sample."
+        },
+        "landing_match": "Landing hero must repeat this hook's promise and offer.",
+        "likely_failure_points": [
+          "About the founder, not the viewer."
+        ],
+        "missing_inputs": [],
+        "readiness": "ready"
+      },
+      {
+        "concept_id": "outcome_visualization",
+        "angle": "outcome_visualization",
+        "hook": "Imagine Schedule a full week of jobs in under 30 minutes with no double-bookings",
+        "structure": "desired end state -> how it happens -> CTA",
+        "main_message": "Picture: Schedule a full week of jobs in under 30 minutes with no double-bookings",
+        "proof_required": "realistic outcome only",
+        "offer": "ExampleDispatch Pro",
+        "cta": "Start free trial",
+        "funnel_stage": "discovery",
+        "awareness_fit": [
+          "problem_aware",
+          "solution_aware"
+        ],
+        "platform_formats": {
+          "meta": [
+            "image",
+            "video (4:5/9:16)",
+            "carousel"
+          ]
+        },
+        "hypothesis": "For owner-operators of HVAC and plumbing companies with 3-15 technicians, a outcome visualization creative will beat the current best on cost per qualified lead because [CUSTOMER INSIGHT / EVIDENCE ID]",
+        "measurement": {
+          "primary_metric": "cost per qualified lead",
+          "guardrails": [
+            "lead_to_customer",
+            "cpl"
+          ],
+          "decision_rule": "Compare against control with experiments.analyze(); no winner below minimum sample."
+        },
+        "landing_match": "Landing hero must repeat this hook's promise and offer.",
+        "likely_failure_points": [
+          "Outcome feels exaggerated or generic."
+        ],
+        "missing_inputs": [],
+        "readiness": "ready"
+      },
+      {
+        "concept_id": "educational",
+        "angle": "educational",
+        "hook": "3 mistakes owner-operators of HVAC and plumbing companies with 3-15 technicians make with {TOPIC}",
+        "structure": "useful lesson -> product as next step -> soft CTA",
+        "main_message": "Teach one useful thing about [TOPIC]; product as next step",
+        "proof_required": "accurate advice",
+        "offer": "ExampleDispatch Pro",
+        "cta": "Start free trial",
+        "funnel_stage": "discovery",
+        "awareness_fit": [
+          "unaware",
+          "problem_aware"
+        ],
+        "platform_formats": {
+          "meta": [
+            "image",
+            "video (4:5/9:16)",
+            "carousel"
+          ]
+        },
+        "hypothesis": "For owner-operators of HVAC and plumbing companies with 3-15 technicians, a educational creative will beat the current best on cost per qualified lead because [CUSTOMER INSIGHT / EVIDENCE ID]",
+        "measurement": {
+          "primary_metric": "cost per qualified lead",
+          "guardrails": [
+            "lead_to_customer",
+            "cpl"
+          ],
+          "decision_rule": "Compare against control with experiments.analyze(); no winner below minimum sample."
+        },
+        "landing_match": "Landing hero must repeat this hook's promise and offer.",
+        "likely_failure_points": [
+          "Educates without driving action; attracts non-buyers.",
+          "missing inputs: ['topic']"
+        ],
+        "missing_inputs": [
+          "topic"
+        ],
+        "readiness": "needs_input"
+      },
+      {
+        "concept_id": "unexpected_use_case",
+        "angle": "unexpected_use_case",
+        "hook": "We didn't expect owner-operators of HVAC and plumbing companies with 3-15 technicians to use ExampleDispatch Pro for {USE_CASE}",
+        "structure": "surprising real use -> why it works -> CTA",
+        "main_message": "Real surprising use: [USE CASE]",
+        "proof_required": "a real observed use case",
+        "offer": "ExampleDispatch Pro",
+        "cta": "Start free trial",
+        "funnel_stage": "discovery",
+        "awareness_fit": [
+          "unaware",
+          "solution_aware"
+        ],
+        "platform_formats": {
+          "meta": [
+            "image",
+            "video (4:5/9:16)",
+            "carousel"
+          ]
+        },
+        "hypothesis": "For owner-operators of HVAC and plumbing companies with 3-15 technicians, a unexpected use case creative will beat the current best on cost per qualified lead because [CUSTOMER INSIGHT / EVIDENCE ID]",
+        "measurement": {
+          "primary_metric": "cost per qualified lead",
+          "guardrails": [
+            "lead_to_customer",
+            "cpl"
+          ],
+          "decision_rule": "Compare against control with experiments.analyze(); no winner below minimum sample."
+        },
+        "landing_match": "Landing hero must repeat this hook's promise and offer.",
+        "likely_failure_points": [
+          "Novelty without relevance to the core buyer.",
+          "missing inputs: ['use_case']"
+        ],
+        "missing_inputs": [
+          "use_case"
+        ],
+        "readiness": "needs_input"
+      },
+      {
+        "concept_id": "offer_led",
+        "angle": "offer_led",
+        "hook": "{OFFER_TERMS}",
+        "structure": "offer -> what's included -> risk reversal -> CTA",
+        "main_message": "[OFFER TERMS]",
+        "proof_required": "real, current offer terms",
+        "offer": "ExampleDispatch Pro",
+        "cta": "Start free trial",
+        "funnel_stage": "conversion",
+        "awareness_fit": [
+          "product_aware",
+          "most_aware"
+        ],
+        "platform_formats": {
+          "meta": [
+            "image",
+            "video (4:5/9:16)",
+            "carousel"
+          ]
+        },
+        "hypothesis": "For owner-operators of HVAC and plumbing companies with 3-15 technicians, a offer led creative will beat the current best on cost per qualified lead because [CUSTOMER INSIGHT / EVIDENCE ID]",
+        "measurement": {
+          "primary_metric": "cost per qualified lead",
+          "guardrails": [
+            "lead_to_customer",
+            "cpl"
+          ],
+          "decision_rule": "Compare against control with experiments.analyze(); no winner below minimum sample."
+        },
+        "landing_match": "Landing hero must repeat this hook's promise and offer.",
+        "likely_failure_points": [
+          "Discount-trained buyers; margin erosion.",
+          "missing inputs: ['offer_terms']"
+        ],
+        "missing_inputs": [
+          "offer_terms"
+        ],
+        "readiness": "needs_input"
+      }
+    ],
+    "near_duplicates": [],
+    "ready": [
+      "problem_led",
+      "product_demo",
+      "objection_handling",
+      "comparison",
+      "founder_story",
+      "outcome_visualization"
+    ],
+    "note": "Concepts are hypotheses. Hooks with {PLACEHOLDERS} need real inputs; never fill proof with invented material."
+  }
+}

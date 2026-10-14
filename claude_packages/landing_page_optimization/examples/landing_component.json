@@ -1,0 +1,13 @@
+{
+  "_note": "Output of the real code on ILLUSTRATIVE fictional inputs.",
+  "input": {
+    "hero": {
+      "headline": "Schedule a full week of jobs in under 30 minutes with no double-bookings",
+      "cta_text": "Start free trial"
+    }
+  },
+  "output": {
+    "warnings": [],
+    "html_written_to": "examples/landing_component.html"
+  }
+}

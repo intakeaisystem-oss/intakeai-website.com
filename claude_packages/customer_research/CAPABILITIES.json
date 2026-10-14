@@ -1,0 +1,26 @@
+{
+  "toolkit_version": "0.1.0",
+  "capabilities": [
+    {
+      "capability": "voc.analyze",
+      "area": "customer_research",
+      "description": "Categorise customer language into themes with verbatim quotes and confidence",
+      "type": "python_code",
+      "runs_in": "any Python 3.9+ sandbox (stdlib only)",
+      "requires": []
+    },
+    {
+      "capability": "psychology.build_profile",
+      "area": "customer_research",
+      "description": "Evidence-tagged customer profile across 21 psychological dimensions",
+      "type": "python_code",
+      "runs_in": "any Python 3.9+ sandbox (stdlib only)",
+      "requires": []
+    },
+    {
+      "capability": "ad platform / analytics / CRM access",
+      "type": "not_included",
+      "description": "No live integrations. Metrics must be supplied as exported data."
+    }
+  ]
+}

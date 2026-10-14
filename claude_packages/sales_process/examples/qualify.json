@@ -1,0 +1,26 @@
+{
+  "_note": "Output of the real code on ILLUSTRATIVE fictional inputs.",
+  "input": {
+    "problem": 2,
+    "budget": 1,
+    "authority": 2,
+    "timing": null,
+    "fit": 2,
+    "engagement": 1
+  },
+  "output": {
+    "status": "qualified",
+    "score": 0.86,
+    "known_criteria": 5,
+    "unknown": [
+      {
+        "criterion": "timing",
+        "ask": "Is there a reason to act in the next 90 days?"
+      }
+    ],
+    "disqualifiers": [],
+    "next_questions": [
+      "Is there a reason to act in the next 90 days?"
+    ]
+  }
+}

@@ -1,0 +1,144 @@
+{
+  "_note": "Output of the real code on ILLUSTRATIVE fictional inputs.",
+  "input": {
+    "impressions": 48000,
+    "clicks": 960,
+    "spend": 1200,
+    "leads": 64,
+    "conversions": 18,
+    "revenue": 1422,
+    "visitors": 900
+  },
+  "output": {
+    "ctr": {
+      "metric": "ctr",
+      "value": 0.02,
+      "ok": true,
+      "error": null,
+      "inputs": {
+        "clicks": 960,
+        "impressions": 48000
+      },
+      "formula": "clicks / impressions",
+      "note": "",
+      "unit": "rate"
+    },
+    "cpc": {
+      "metric": "cpc",
+      "value": 1.25,
+      "ok": true,
+      "error": null,
+      "inputs": {
+        "spend": 1200,
+        "clicks": 960
+      },
+      "formula": "spend / clicks",
+      "note": "",
+      "unit": "currency"
+    },
+    "cpm": {
+      "metric": "cpm",
+      "value": 25.0,
+      "ok": true,
+      "error": null,
+      "inputs": {
+        "spend": 1200,
+        "impressions": 48000
+      },
+      "formula": "spend / impressions * 1000",
+      "note": "",
+      "unit": "currency"
+    },
+    "cpl": {
+      "metric": "cpl",
+      "value": 18.75,
+      "ok": true,
+      "error": null,
+      "inputs": {
+        "spend": 1200,
+        "leads": 64
+      },
+      "formula": "spend / leads",
+      "note": "",
+      "unit": "currency"
+    },
+    "cpa": {
+      "metric": "cpa",
+      "value": 66.666667,
+      "ok": true,
+      "error": null,
+      "inputs": {
+        "spend": 1200,
+        "acquisitions": 18
+      },
+      "formula": "spend / acquisitions (conversion events)",
+      "note": "CPA counts the tracked conversion event; it is usually narrower than CAC.",
+      "unit": "currency"
+    },
+    "click_to_conversion": {
+      "metric": "conversion_rate",
+      "value": 0.02,
+      "ok": true,
+      "error": null,
+      "inputs": {
+        "conversions": 18,
+        "visitors": 900
+      },
+      "formula": "conversions / visitors",
+      "note": "",
+      "unit": "rate"
+    },
+    "roas": {
+      "metric": "roas",
+      "value": 1.185,
+      "ok": true,
+      "error": null,
+      "inputs": {
+        "revenue": 1422,
+        "spend": 1200
+      },
+      "formula": "attributed revenue / ad spend",
+      "note": "ROAS is revenue, not profit. Compare against breakeven_roas() before calling a campaign profitable.",
+      "unit": "ratio"
+    },
+    "revenue_per_visitor": {
+      "metric": "revenue_per_visitor",
+      "value": 1.58,
+      "ok": true,
+      "error": null,
+      "inputs": {
+        "revenue": 1422,
+        "visitors": 900
+      },
+      "formula": "revenue / visitors",
+      "note": "",
+      "unit": "currency"
+    },
+    "breakeven_roas": {
+      "metric": "breakeven_roas",
+      "value": 1.176471,
+      "ok": true,
+      "error": null,
+      "inputs": {
+        "gross_margin": 0.85
+      },
+      "formula": "1 / gross margin",
+      "note": "ROAS below this loses money on first purchase (before fixed costs).",
+      "unit": ""
+    },
+    "poas": {
+      "metric": "poas",
+      "value": 1.00725,
+      "ok": true,
+      "error": null,
+      "inputs": {
+        "gross_profit": 1208.7,
+        "spend": 1200
+      },
+      "formula": "gross profit from attributed orders / ad spend",
+      "note": "",
+      "unit": "ratio"
+    },
+    "profitable_on_first_purchase": true
+  }
+}

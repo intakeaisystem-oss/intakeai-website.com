@@ -1,0 +1,117 @@
+{
+  "_note": "Output of the real code on ILLUSTRATIVE fictional inputs.",
+  "input": {
+    "traffic_source": "meta",
+    "stages": [
+      {
+        "name": "ad_click",
+        "count": 960,
+        "message": "Schedule a full week of jobs in under 30 minutes"
+      },
+      {
+        "name": "landing",
+        "count": 900,
+        "message": "Schedule a full week of jobs in under 30 minutes",
+        "cta": "Start free trial"
+      },
+      {
+        "name": "signup",
+        "count": 110
+      },
+      {
+        "name": "activation",
+        "count": 35
+      },
+      {
+        "name": "purchase",
+        "count": 18,
+        "message": "Choose your plan"
+      }
+    ]
+  },
+  "output": {
+    "funnel": {
+      "ok": true,
+      "error": null,
+      "stages": [
+        {
+          "name": "ad_click",
+          "count": 960
+        },
+        {
+          "name": "landing",
+          "count": 900,
+          "step_conversion": 0.9375,
+          "drop_off": 0.0625,
+          "cumulative_conversion": 0.9375
+        },
+        {
+          "name": "signup",
+          "count": 110,
+          "step_conversion": 0.122222,
+          "drop_off": 0.877778,
+          "cumulative_conversion": 0.114583
+        },
+        {
+          "name": "activation",
+          "count": 35,
+          "step_conversion": 0.318182,
+          "drop_off": 0.681818,
+          "cumulative_conversion": 0.036458
+        },
+        {
+          "name": "purchase",
+          "count": 18,
+          "step_conversion": 0.514286,
+          "drop_off": 0.485714,
+          "cumulative_conversion": 0.01875
+        }
+      ],
+      "largest_drop": "signup",
+      "overall_conversion": 0.01875
+    },
+    "recommendations": [
+      {
+        "area": "drop_off",
+        "severity": "high",
+        "finding": "Largest drop-off entering 'signup' (88% lost)",
+        "recommendation": "Investigate the step before 'signup': friction, unclear value, trust or mismatch with expectations.",
+        "hypothesis": "Reducing friction/uncertainty at 'signup' increases step conversion.",
+        "how_to_test": "Session recordings + exit survey, then A/B test the top fix",
+        "evidence": [],
+        "line": null
+      },
+      {
+        "area": "activation",
+        "severity": "high",
+        "finding": "Only 32% of signups activate",
+        "recommendation": "Shorten time-to-first-value: remove setup steps before the first win, add templates/sample data, onboarding checklist.",
+        "hypothesis": "Users who reach value quickly are more likely to convert and retain.",
+        "how_to_test": "Cohort comparison of new onboarding vs old",
+        "evidence": [],
+        "line": null
+      },
+      {
+        "area": "data",
+        "severity": "medium",
+        "finding": "Stages with < 100 users: ['activation', 'purchase']",
+        "recommendation": "Treat rates at these stages as directional; collect more data or use qualitative research (session recordings, interviews).",
+        "hypothesis": "Small samples produce noisy conversion rates.",
+        "how_to_test": "Wait for more traffic / run user interviews",
+        "evidence": [],
+        "line": null
+      },
+      {
+        "area": "trust",
+        "severity": "medium",
+        "finding": "No proof/trust element at 'purchase'",
+        "recommendation": "Add verified proof, guarantee terms (if real), security and refund info near the purchase action.",
+        "hypothesis": "Perceived risk peaks at payment; visible trust reduces abandonment.",
+        "how_to_test": "A/B test or usability test",
+        "evidence": [],
+        "line": null
+      }
+    ],
+    "note": "Hypotheses to test, not guaranteed improvements."
+  }
+}

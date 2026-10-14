@@ -1,0 +1,78 @@
+{
+  "_note": "Output of the real code on ILLUSTRATIVE fictional inputs.",
+  "input": {
+    "base": {
+      "price": 79,
+      "cogs_per_order": 12,
+      "orders_per_customer": 1,
+      "cac_value": 250,
+      "monthly": true,
+      "churn": 0.05
+    }
+  },
+  "output": {
+    "base": {
+      "params": {
+        "price": 79,
+        "cogs_per_order": 12,
+        "orders_per_customer": 1,
+        "cac_value": 250,
+        "monthly": true,
+        "churn": 0.05
+      },
+      "profit_per_customer": 1090.0,
+      "ltv_to_cac": 5.36,
+      "gross_margin": 0.848101,
+      "ok": true,
+      "error": null
+    },
+    "price_up_15pct": {
+      "params": {
+        "price": 90.85,
+        "cogs_per_order": 12,
+        "orders_per_customer": 1,
+        "cac_value": 250,
+        "monthly": true,
+        "churn": 0.05
+      },
+      "profit_per_customer": 1327.0,
+      "ltv_to_cac": 6.308,
+      "gross_margin": 0.867914,
+      "ok": true,
+      "error": null,
+      "delta_profit_per_customer": 237.0
+    },
+    "churn_worse": {
+      "params": {
+        "price": 79,
+        "cogs_per_order": 12,
+        "orders_per_customer": 1,
+        "cac_value": 250,
+        "monthly": true,
+        "churn": 0.08
+      },
+      "profit_per_customer": 587.5,
+      "ltv_to_cac": 3.35,
+      "gross_margin": 0.848101,
+      "ok": true,
+      "error": null,
+      "delta_profit_per_customer": -502.5
+    },
+    "cac_up_40pct": {
+      "params": {
+        "price": 79,
+        "cogs_per_order": 12,
+        "orders_per_customer": 1,
+        "cac_value": 350.0,
+        "monthly": true,
+        "churn": 0.05
+      },
+      "profit_per_customer": 990.0,
+      "ltv_to_cac": 3.828571,
+      "gross_margin": 0.848101,
+      "ok": true,
+      "error": null,
+      "delta_profit_per_customer": -100.0
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "_note": "ILLUSTRATIVE, FICTIONAL inputs for demonstrating the toolkit. Not real customers, reviews, prices or results.",
+  "product": {"name": "ExampleDispatch", "category": "field-service scheduling app",
+              "description": "schedule and dispatch technicians for small HVAC and plumbing companies",
+              "alternatives": ["spreadsheets", "whiteboard", "BigFSM"]},
+  "documents": [
+    {"id": "r1", "source_type": "review", "rating": 2, "source_ref": "example-review-1", "text": "I was so frustrated with spreadsheets. Scheduling my techs takes hours every week and someone always gets double-booked. I just want something simple so that I can stop doing it manually."},
+    {"id": "r2", "source_type": "competitor_review", "rating": 1, "source_ref": "example-review-2", "text": "Switched from BigFSM because it kept crashing and support was terrible. Way too complicated for a 6-truck shop."},
+    {"id": "r3", "source_type": "review", "rating": 5, "source_ref": "example-review-3", "text": "Love how easy it is to set up. Saves me hours every week on scheduling. The text reminders mean fewer no-shows."},
+    {"id": "r4", "source_type": "sales_call", "source_ref": "example-call-1", "text": "Honestly it looks good but it's too expensive for a small shop like mine, not sure it's worth it. I'm also worried about moving all our customer data over."},
+    {"id": "r5", "source_type": "churn_reason", "source_ref": "example-churn-1", "text": "We cancelled because the mobile app was slow in areas with bad signal."},
+    {"id": "r6", "source_type": "interview", "source_ref": "example-interview-1", "text": "The last straw was when we missed two emergency calls in one week because the board was wrong. That's when I started looking for software. I need to see the whole week at a glance."},
+    {"id": "r7", "source_type": "survey", "source_ref": "example-survey-1", "text": "Scheduling takes hours every week. I wish the techs could see their jobs on their phones."},
+    {"id": "r8", "source_type": "support_ticket", "source_ref": "example-ticket-1", "text": "The setup was confusing, I couldn't figure out how to import my customer list."}
+  ],
+  "offer": {"name": "ExampleDispatch Pro", "target_customer": "owner-operators of HVAC and plumbing companies with 3-15 technicians",
+            "problem": "Scheduling technicians by phone and spreadsheet takes hours every week and causes double-bookings",
+            "desired_outcome": "Schedule a full week of jobs in under 30 minutes with no double-bookings",
+            "value_proposition": "See and schedule every technician's week on one screen, with automatic text reminders",
+            "differentiation": "Unlike spreadsheets, technicians see jobs on their phones and customers get reminders automatically",
+            "price": 79, "currency": "$", "billing": "monthly", "packaging": "One plan, up to 15 technicians",
+            "deliverables": ["drag-and-drop schedule", "technician mobile app", "SMS reminders", "customer list import"],
+            "time_to_value_days": 1, "risk_reversal": "", "proof": [], "implementation_effort": "low",
+            "alternatives": ["spreadsheets", "BigFSM"], "fulfillment_cost": 12, "acquisition_cost_estimate": 250,
+            "expected_purchases_per_customer": 18},
+  "copy": "Still scheduling techs on spreadsheets? ExampleDispatch lets you schedule a full week of jobs in under 30 minutes. Unlike spreadsheets, your techs see their jobs on their phones and customers get automatic text reminders. Start your free 14-day trial.",
+  "campaign_metrics": {"impressions": 48000, "clicks": 960, "spend": 1200, "leads": 64, "conversions": 18, "revenue": 1422, "visitors": 900},
+  "experiment_arms": {"control": {"n": 4200, "conversions": 168}, "B": {"n": 4150, "conversions": 214}},
+  "funnel": {"traffic_source": "meta", "stages": [
+      {"name": "ad_click", "count": 960, "message": "Schedule a full week of jobs in under 30 minutes"},
+      {"name": "landing", "count": 900, "message": "Schedule a full week of jobs in under 30 minutes", "cta": "Start free trial"},
+      {"name": "signup", "count": 110},
+      {"name": "activation", "count": 35},
+      {"name": "purchase", "count": 18, "message": "Choose your plan"}]}
+}

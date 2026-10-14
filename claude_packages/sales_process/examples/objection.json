@@ -1,0 +1,53 @@
+{
+  "_note": "Output of the real code on ILLUSTRATIVE fictional inputs.",
+  "input": {
+    "text": "Looks good but it's too expensive for a small shop like mine"
+  },
+  "output": {
+    "objection_text": "Looks good but it's too expensive for a small shop like mine",
+    "matches": [
+      {
+        "objection": "price",
+        "matched": [
+          "too expensive"
+        ],
+        "score": 1
+      }
+    ],
+    "primary": "price",
+    "plan": {
+      "possible_underlying_reasons": [
+        "Value not yet clear relative to price",
+        "Comparing against a cheaper but different alternative",
+        "Genuinely no budget",
+        "Negotiation tactic",
+        "Risk feels high for the amount"
+      ],
+      "clarifying_questions": [
+        "Compared to what?",
+        "If price weren't a factor, would this be the right solution?",
+        "What does the problem cost you today (time, money, risk)?",
+        "Is it the total, or how it's paid?"
+      ],
+      "evidence_to_use": [
+        "[NEEDED] cost-of-problem calculation using their numbers",
+        "[NEEDED] verified case with comparable customer",
+        "[NEEDED] itemised inclusions"
+      ],
+      "truthful_response_pattern": "Acknowledge; clarify the comparison; connect price to the cost of the problem using THEIR numbers; offer a smaller scope if it truly fits.",
+      "stop_pursuing_if": [
+        "Their realistic value from solving the problem is below your price",
+        "They only buy on lowest price"
+      ],
+      "offer_unsuitable_when": "The buyer's problem is small enough that a cheaper alternative serves them well.",
+      "improve_product_or_offer_if": "Many qualified buyers say this: test packaging, entry offer or payment terms.",
+      "decision": "clarify_then_respond",
+      "decision_reasons": []
+    },
+    "rules": [
+      "Ask before answering",
+      "Never invent proof, discounts, deadlines or capabilities",
+      "Disqualifying a poor-fit buyer is a good outcome"
+    ]
+  }
+}

@@ -1,0 +1,580 @@
+{
+  "_note": "Output of the real code on ILLUSTRATIVE fictional inputs.",
+  "input": {
+    "documents": [
+      {
+        "id": "r1",
+        "source_type": "review",
+        "rating": 2,
+        "source_ref": "example-review-1",
+        "text": "I was so frustrated with spreadsheets. Scheduling my techs takes hours every week and someone always gets double-booked. I just want something simple so that I can stop doing it manually."
+      },
+      {
+        "id": "r2",
+        "source_type": "competitor_review",
+        "rating": 1,
+        "source_ref": "example-review-2",
+        "text": "Switched from BigFSM because it kept crashing and support was terrible. Way too complicated for a 6-truck shop."
+      },
+      {
+        "id": "r3",
+        "source_type": "review",
+        "rating": 5,
+        "source_ref": "example-review-3",
+        "text": "Love how easy it is to set up. Saves me hours every week on scheduling. The text reminders mean fewer no-shows."
+      },
+      {
+        "id": "r4",
+        "source_type": "sales_call",
+        "source_ref": "example-call-1",
+        "text": "Honestly it looks good but it's too expensive for a small shop like mine, not sure it's worth it. I'm also worried about moving all our customer data over."
+      },
+      {
+        "id": "r5",
+        "source_type": "churn_reason",
+        "source_ref": "example-churn-1",
+        "text": "We cancelled because the mobile app was slow in areas with bad signal."
+      },
+      {
+        "id": "r6",
+        "source_type": "interview",
+        "source_ref": "example-interview-1",
+        "text": "The last straw was when we missed two emergency calls in one week because the board was wrong. That's when I started looking for software. I need to see the whole week at a glance."
+      },
+      {
+        "id": "r7",
+        "source_type": "survey",
+        "source_ref": "example-survey-1",
+        "text": "Scheduling takes hours every week. I wish the techs could see their jobs on their phones."
+      },
+      {
+        "id": "r8",
+        "source_type": "support_ticket",
+        "source_ref": "example-ticket-1",
+        "text": "The setup was confusing, I couldn't figure out how to import my customer list."
+      }
+    ],
+    "competitors": [
+      "spreadsheets",
+      "whiteboard",
+      "BigFSM"
+    ]
+  },
+  "output": {
+    "documents_received": 8,
+    "documents_used": 8,
+    "near_duplicates_removed": [],
+    "sources_by_type": {
+      "review": 2,
+      "competitor_review": 1,
+      "sales_call": 1,
+      "churn_reason": 1,
+      "interview": 1,
+      "survey": 1,
+      "support_ticket": 1
+    },
+    "categories": {
+      "problem": {
+        "mention_count": 5,
+        "document_count": 3,
+        "share_of_documents": 0.375,
+        "confidence": "medium",
+        "themes": [
+          {
+            "label": "every week / takes hours / scheduling",
+            "label_is_generated": true,
+            "mention_count": 2,
+            "document_count": 2,
+            "source_types": [
+              "review",
+              "survey"
+            ],
+            "confidence": "low",
+            "quotes": [
+              {
+                "quote": "Scheduling takes hours every week.",
+                "verbatim": true,
+                "doc_id": "r7",
+                "source_type": "survey",
+                "source_ref": "example-survey-1"
+              },
+              {
+                "quote": "Scheduling my techs takes hours every week and someone always gets double-booked.",
+                "verbatim": true,
+                "doc_id": "r1",
+                "source_type": "review",
+                "source_ref": "example-review-1"
+              }
+            ]
+          },
+          {
+            "label": "frustrated / spreadsheets",
+            "label_is_generated": true,
+            "mention_count": 1,
+            "document_count": 1,
+            "source_types": [
+              "review"
+            ],
+            "confidence": "low",
+            "quotes": [
+              {
+                "quote": "I was so frustrated with spreadsheets.",
+                "verbatim": true,
+                "doc_id": "r1",
+                "source_type": "review",
+                "source_ref": "example-review-1"
+              }
+            ]
+          },
+          {
+            "label": "manually / simple / something",
+            "label_is_generated": true,
+            "mention_count": 1,
+            "document_count": 1,
+            "source_types": [
+              "review"
+            ],
+            "confidence": "low",
+            "quotes": [
+              {
+                "quote": "I just want something simple so that I can stop doing it manually.",
+                "verbatim": true,
+                "doc_id": "r1",
+                "source_type": "review",
+                "source_ref": "example-review-1"
+              }
+            ]
+          },
+          {
+            "label": "confusing / couldn't / customer",
+            "label_is_generated": true,
+            "mention_count": 1,
+            "document_count": 1,
+            "source_types": [
+              "support_ticket"
+            ],
+            "confidence": "low",
+            "quotes": [
+              {
+                "quote": "The setup was confusing, I couldn't figure out how to import my customer list.",
+                "verbatim": true,
+                "doc_id": "r8",
+                "source_type": "support_ticket",
+                "source_ref": "example-ticket-1"
+              }
+            ]
+          }
+        ]
+      },
+      "desired_outcome": {
+        "mention_count": 4,
+        "document_count": 3,
+        "share_of_documents": 0.375,
+        "confidence": "medium",
+        "themes": [
+          {
+            "label": "manually / simple / something",
+            "label_is_generated": true,
+            "mention_count": 1,
+            "document_count": 1,
+            "source_types": [
+              "review"
+            ],
+            "confidence": "low",
+            "quotes": [
+              {
+                "quote": "I just want something simple so that I can stop doing it manually.",
+                "verbatim": true,
+                "doc_id": "r1",
+                "source_type": "review",
+                "source_ref": "example-review-1"
+              }
+            ]
+          },
+          {
+            "label": "looking / software / started",
+            "label_is_generated": true,
+            "mention_count": 1,
+            "document_count": 1,
+            "source_types": [
+              "interview"
+            ],
+            "confidence": "low",
+            "quotes": [
+              {
+                "quote": "That's when I started looking for software.",
+                "verbatim": true,
+                "doc_id": "r6",
+                "source_type": "interview",
+                "source_ref": "example-interview-1"
+              }
+            ]
+          },
+          {
+            "label": "glance / need / week",
+            "label_is_generated": true,
+            "mention_count": 1,
+            "document_count": 1,
+            "source_types": [
+              "interview"
+            ],
+            "confidence": "low",
+            "quotes": [
+              {
+                "quote": "I need to see the whole week at a glance.",
+                "verbatim": true,
+                "doc_id": "r6",
+                "source_type": "interview",
+                "source_ref": "example-interview-1"
+              }
+            ]
+          },
+          {
+            "label": "jobs / phones / techs",
+            "label_is_generated": true,
+            "mention_count": 1,
+            "document_count": 1,
+            "source_types": [
+              "survey"
+            ],
+            "confidence": "low",
+            "quotes": [
+              {
+                "quote": "I wish the techs could see their jobs on their phones.",
+                "verbatim": true,
+                "doc_id": "r7",
+                "source_type": "survey",
+                "source_ref": "example-survey-1"
+              }
+            ]
+          }
+        ]
+      },
+      "objection": {
+        "mention_count": 2,
+        "document_count": 1,
+        "share_of_documents": 0.125,
+        "confidence": "low",
+        "themes": [
+          {
+            "label": "expensive / good / like",
+            "label_is_generated": true,
+            "mention_count": 1,
+            "document_count": 1,
+            "source_types": [
+              "sales_call"
+            ],
+            "confidence": "low",
+            "quotes": [
+              {
+                "quote": "Honestly it looks good but it's too expensive for a small shop like mine, not sure it's worth it.",
+                "verbatim": true,
+                "doc_id": "r4",
+                "source_type": "sales_call",
+                "source_ref": "example-call-1"
+              }
+            ]
+          },
+          {
+            "label": "customer / data / moving",
+            "label_is_generated": true,
+            "mention_count": 1,
+            "document_count": 1,
+            "source_types": [
+              "sales_call"
+            ],
+            "confidence": "low",
+            "quotes": [
+              {
+                "quote": "I'm also worried about moving all our customer data over.",
+                "verbatim": true,
+                "doc_id": "r4",
+                "source_type": "sales_call",
+                "source_ref": "example-call-1"
+              }
+            ]
+          }
+        ]
+      },
+      "switching_reason": {
+        "mention_count": 1,
+        "document_count": 1,
+        "share_of_documents": 0.125,
+        "confidence": "low",
+        "themes": [
+          {
+            "label": "bigfsm / crashing / kept",
+            "label_is_generated": true,
+            "mention_count": 1,
+            "document_count": 1,
+            "source_types": [
+              "competitor_review"
+            ],
+            "confidence": "low",
+            "quotes": [
+              {
+                "quote": "Switched from BigFSM because it kept crashing and support was terrible.",
+                "verbatim": true,
+                "doc_id": "r2",
+                "source_type": "competitor_review",
+                "source_ref": "example-review-2"
+              }
+            ]
+          }
+        ]
+      },
+      "purchase_trigger": {
+        "mention_count": 2,
+        "document_count": 1,
+        "share_of_documents": 0.125,
+        "confidence": "low",
+        "themes": [
+          {
+            "label": "board / calls / emergency",
+            "label_is_generated": true,
+            "mention_count": 1,
+            "document_count": 1,
+            "source_types": [
+              "interview"
+            ],
+            "confidence": "low",
+            "quotes": [
+              {
+                "quote": "The last straw was when we missed two emergency calls in one week because the board was wrong.",
+                "verbatim": true,
+                "doc_id": "r6",
+                "source_type": "interview",
+                "source_ref": "example-interview-1"
+              }
+            ]
+          },
+          {
+            "label": "looking / software / started",
+            "label_is_generated": true,
+            "mention_count": 1,
+            "document_count": 1,
+            "source_types": [
+              "interview"
+            ],
+            "confidence": "low",
+            "quotes": [
+              {
+                "quote": "That's when I started looking for software.",
+                "verbatim": true,
+                "doc_id": "r6",
+                "source_type": "interview",
+                "source_ref": "example-interview-1"
+              }
+            ]
+          }
+        ]
+      },
+      "product_complaint": {
+        "mention_count": 2,
+        "document_count": 2,
+        "share_of_documents": 0.25,
+        "confidence": "low",
+        "themes": [
+          {
+            "label": "bigfsm / crashing / kept",
+            "label_is_generated": true,
+            "mention_count": 1,
+            "document_count": 1,
+            "source_types": [
+              "competitor_review"
+            ],
+            "confidence": "low",
+            "quotes": [
+              {
+                "quote": "Switched from BigFSM because it kept crashing and support was terrible.",
+                "verbatim": true,
+                "doc_id": "r2",
+                "source_type": "competitor_review",
+                "source_ref": "example-review-2"
+              }
+            ]
+          },
+          {
+            "label": "app / areas / bad",
+            "label_is_generated": true,
+            "mention_count": 1,
+            "document_count": 1,
+            "source_types": [
+              "churn_reason"
+            ],
+            "confidence": "low",
+            "quotes": [
+              {
+                "quote": "We cancelled because the mobile app was slow in areas with bad signal.",
+                "verbatim": true,
+                "doc_id": "r5",
+                "source_type": "churn_reason",
+                "source_ref": "example-churn-1"
+              }
+            ]
+          }
+        ]
+      },
+      "unmet_expectation": {
+        "mention_count": 0,
+        "document_count": 0,
+        "share_of_documents": 0.0,
+        "confidence": "none",
+        "themes": []
+      },
+      "valued_feature": {
+        "mention_count": 2,
+        "document_count": 1,
+        "share_of_documents": 0.125,
+        "confidence": "low",
+        "themes": [
+          {
+            "label": "easy / love / set",
+            "label_is_generated": true,
+            "mention_count": 1,
+            "document_count": 1,
+            "source_types": [
+              "review"
+            ],
+            "confidence": "low",
+            "quotes": [
+              {
+                "quote": "Love how easy it is to set up.",
+                "verbatim": true,
+                "doc_id": "r3",
+                "source_type": "review",
+                "source_ref": "example-review-3"
+              }
+            ]
+          },
+          {
+            "label": "every / hours / saves",
+            "label_is_generated": true,
+            "mention_count": 1,
+            "document_count": 1,
+            "source_types": [
+              "review"
+            ],
+            "confidence": "low",
+            "quotes": [
+              {
+                "quote": "Saves me hours every week on scheduling.",
+                "verbatim": true,
+                "doc_id": "r3",
+                "source_type": "review",
+                "source_ref": "example-review-3"
+              }
+            ]
+          }
+        ]
+      },
+      "abandonment_reason": {
+        "mention_count": 1,
+        "document_count": 1,
+        "share_of_documents": 0.125,
+        "confidence": "low",
+        "themes": [
+          {
+            "label": "app / areas / bad",
+            "label_is_generated": true,
+            "mention_count": 1,
+            "document_count": 1,
+            "source_types": [
+              "churn_reason"
+            ],
+            "confidence": "low",
+            "quotes": [
+              {
+                "quote": "We cancelled because the mobile app was slow in areas with bad signal.",
+                "verbatim": true,
+                "doc_id": "r5",
+                "source_type": "churn_reason",
+                "source_ref": "example-churn-1"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "customer_terms": [
+      {
+        "phrase": "hours every week",
+        "document_count": 3
+      },
+      {
+        "phrase": "scheduling",
+        "document_count": 3
+      },
+      {
+        "phrase": "takes hours",
+        "document_count": 2
+      },
+      {
+        "phrase": "customer",
+        "document_count": 2
+      },
+      {
+        "phrase": "shop",
+        "document_count": 2
+      },
+      {
+        "phrase": "techs",
+        "document_count": 2
+      }
+    ],
+    "emotional_language": [
+      {
+        "term": "frustrated",
+        "document_count": 1
+      },
+      {
+        "term": "love",
+        "document_count": 1
+      },
+      {
+        "term": "worried",
+        "document_count": 1
+      }
+    ],
+    "competitor_mentions": [
+      {
+        "competitor": "spreadsheets",
+        "document_count": 1,
+        "negative_context_count": 0,
+        "quotes": [
+          {
+            "quote": "I was so frustrated with spreadsheets.",
+            "verbatim": true,
+            "doc_id": "r1",
+            "source_ref": "example-review-1"
+          }
+        ]
+      },
+      {
+        "competitor": "BigFSM",
+        "document_count": 1,
+        "negative_context_count": 1,
+        "quotes": [
+          {
+            "quote": "Switched from BigFSM because it kept crashing and support was terrible.",
+            "verbatim": true,
+            "doc_id": "r2",
+            "source_ref": "example-review-2"
+          }
+        ]
+      }
+    ],
+    "rating_summary": {
+      "n": 3,
+      "mean": 2.67,
+      "low_1_2": 2,
+      "high_4_5": 1
+    },
+    "limitations": [
+      "Classification uses cue phrases: review the themes before relying on them.",
+      "Only 8 unique documents: frequencies are indicative, not representative.",
+      "Ratings are polarised: typical of review sites, middle opinions are under-represented."
+    ],
+    "provenance_note": "Quotes are verbatim substrings of the input. Theme labels are generated keyword summaries."
+  }
+}

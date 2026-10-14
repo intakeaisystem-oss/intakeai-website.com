@@ -1,0 +1,60 @@
+{
+  "_note": "Output of the real code on ILLUSTRATIVE fictional inputs.",
+  "input": {
+    "control": {
+      "n": 4200,
+      "conversions": 168
+    },
+    "B": {
+      "n": 4150,
+      "conversions": 214
+    }
+  },
+  "output": {
+    "analysis": {
+      "control": "control",
+      "comparisons": {
+        "B": {
+          "control_rate": 0.04,
+          "variant_rate": 0.051566265060240965,
+          "absolute_diff": 0.011566265060240964,
+          "relative_lift": 0.2891566265060241,
+          "z": 2.5291741117872806,
+          "p_value": 0.01143312945063113,
+          "diff_ci": [
+            0.0026000518815080583,
+            0.02053247823897387
+          ],
+          "control_ci": [
+            0.034481785779430243,
+            0.04635890770286631
+          ],
+          "variant_ci": [
+            0.04524293476754064,
+            0.05871901541803459
+          ],
+          "alpha": 0.05
+        }
+      },
+      "multiple_comparison": {
+        "B": {
+          "p_value": 0.01143312945063113,
+          "holm_threshold": 0.05,
+          "significant": true
+        }
+      },
+      "decisions": {
+        "B": "variant_wins"
+      },
+      "data_warnings": [],
+      "guardrail_failures": [],
+      "assumptions": [
+        "Independent visitors, randomly assigned",
+        "Fixed-horizon test (no peeking/optional stopping)",
+        "Binary conversion metric",
+        "alpha=0.05, two-sided; Holm correction when >1 variant"
+      ]
+    },
+    "sample_size_per_arm_for_10pct_lift_at_4pct": 39475
+  }
+}

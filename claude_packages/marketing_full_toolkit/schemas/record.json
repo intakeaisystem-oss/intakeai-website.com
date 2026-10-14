@@ -1,0 +1,82 @@
+{
+  "type": "object",
+  "required": [
+    "kind",
+    "title",
+    "data"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "kind": {
+      "type": "string",
+      "enum": [
+        "customer_insight",
+        "voc_finding",
+        "offer",
+        "copy_asset",
+        "ad_concept",
+        "ad_variant",
+        "campaign_hypothesis",
+        "objection",
+        "funnel_audit",
+        "experiment",
+        "campaign_result",
+        "approach",
+        "source",
+        "customer_profile"
+      ]
+    },
+    "title": {
+      "type": "string",
+      "minLength": 2,
+      "maxLength": 300
+    },
+    "product": {
+      "type": "string"
+    },
+    "audience": {
+      "type": "string"
+    },
+    "confidence": {
+      "type": "string",
+      "enum": [
+        "low",
+        "medium",
+        "high"
+      ]
+    },
+    "basis": {
+      "type": "string",
+      "enum": [
+        "observed",
+        "measured",
+        "inferred",
+        "hypothesis"
+      ]
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "status": {
+      "type": "string"
+    },
+    "data": {
+      "type": "object"
+    },
+    "natural_key": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}

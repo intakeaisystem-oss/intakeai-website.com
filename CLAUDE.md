@@ -1,5 +1,20 @@
 # CLAUDE.md
 
+## Marketing toolkit (`marketing_toolkit/`)
+This is a stdlib-only Python package. **Read `MARKETING_TOOLKIT.md`.**
+
+- Run tests with `python3 -m unittest discover -s tests -t .`
+- Run the acceptance demo with `python3 scripts/demo_end_to_end.py --reset`
+- Rebuild the packages for normal Claude with `python3 scripts/build_claude_packages.py`
+
+Rules for this toolkit:
+- Never fabricate testimonials, results or metrics.
+- Keep the `basis` and `confidence` labels on every insight.
+- Imports must never silently overwrite existing data.
+- Run the tests before committing.
+
+## Research agents
+
 This repository is a **10-agent business research intelligence system**, built entirely from Claude-native files: subagents, skills and Markdown memory. There's no application code to run.
 
 **Read `CLAUDE_HANDOFF.md` first.** It explains everything.
